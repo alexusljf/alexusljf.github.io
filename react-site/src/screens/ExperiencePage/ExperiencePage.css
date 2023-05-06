@@ -1,13 +1,8 @@
 .experiencePage{
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgba(233, 220, 204, 0.884);
-    padding-top: 8vh;
+    margin-top: 2vh;
+    padding-top: 10vh;
     padding-left: 3vw;
     padding-right: 3vw;
-    padding-bottom: 18vh;
 }
 .experienceContainer{
     align-items: center;

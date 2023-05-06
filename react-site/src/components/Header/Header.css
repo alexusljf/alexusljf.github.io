@@ -20,6 +20,9 @@
     color: white;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 /* These use vh and vw, kinda dont know so using the old px one
 .topBar{
     background-color: rgb(218, 194, 165);

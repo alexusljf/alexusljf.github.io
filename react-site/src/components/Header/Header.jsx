@@ -9,19 +9,19 @@ function Header(){
         <>
         <div className="topBar">
             <div className='leftSection'>
-                <a href='/'>
+                <a href = "#mainSection">
                 <button className='homeButton'>
                     Home
                 </button>
             </a>
             </div>
         <div className="middleSection">
-                <a href='/projects'>
+                <a href = "#projectSection">
                     <button className='middleButton'>
                         Projects
                     </button>
                 </a>
-                <a href='/experience'>
+                <a href = "#experienceSection">
                     <button className='middleButton'>
                         Experience
                     </button>
