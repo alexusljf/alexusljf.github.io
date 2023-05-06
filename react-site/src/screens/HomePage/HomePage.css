@@ -12,7 +12,7 @@
     border-radius: 300px;
     border-color: black;
     border-style: solid;
-    object-fit: fill;
+    object-fit: contain;
     object-position: center;
     background-color: rgb(218, 194, 165);
 }

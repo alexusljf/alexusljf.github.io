@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomePage.css";
 import Header from "../../components/Header/Header";
-import myPicTransparent from "./my pic transparent bg.png";
+import myPic from "./photo2.png";
 import resumePDF from "./Alexus Lim Resume.pdf";
 
 function HomePage() {
@@ -29,7 +29,7 @@ function HomePage() {
         <a href = {resumePDF} target = "_blank">Resume (Last Updated 05/05/2023)</a>
     </div>
     <div className = "pictureContainer">
-        <img src = {myPicTransparent} className = "myPic" alt = "Picture of my face"/> 
+        <img src = {myPic} className = "myPic" alt = "Picture of my face"/> 
     </div>
 </div>
   );
