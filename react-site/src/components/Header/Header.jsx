@@ -11,7 +11,7 @@ function Header(){
             <div className='leftSection'>
                 <a href = "#mainSection">
                 <button className='homeButton'>
-                    Home
+                    About Me
                 </button>
             </a>
             </div>

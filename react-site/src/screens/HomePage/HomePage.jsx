@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomePage.css";
-import Header from "../../components/Header/Header";
 import myPic from "./photo2.png";
 import resumePDF from "./Alexus Lim Resume.pdf";
 
@@ -9,9 +8,9 @@ function HomePage() {
   return (
     
     <div id = "mainSection" className = "mainPage">
-      <Header />
+
     <div className = "bioContainer">
-        <h1>
+        <h1 style = {{display: "inline-block", textAlign: "center" , borderBottom: "solid 1px #000"}}>
             Hello! I'm Alexus!
         </h1>
         <article>
@@ -22,11 +21,11 @@ function HomePage() {
             <p>
             <b>Languages</b>: English, Chinese, Malay <br/>
             <b>Programming Languages</b>: Java, Python, C, SQL <br/>
-            <b>Web Development</b>: HTML, CSS, Javascript <br/>
+            <b>Web Development</b>: HTML, CSS, Javascript, ReactJS <br/>
             <b>Other Skills</b>: GitHub, Zoom, Jira, Microsoft Teams <br/>
             </p>
         </article>
-        <a href = {resumePDF} target = "_blank">Resume (Last Updated 05/05/2023)</a>
+        <a href = {resumePDF} target = "_blank" className = 'resumeLink'>Resume (Last Updated 05/05/2023)</a>
     </div>
     <div className = "pictureContainer">
         <img src = {myPic} className = "myPic" alt = "Picture of my face"/> 
