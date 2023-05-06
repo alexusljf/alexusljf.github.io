@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.81e224ff.css",
-    "main.js": "/static/js/main.b59b3819.js",
+    "main.css": "/static/css/main.b447d1e4.css",
+    "main.js": "/static/js/main.a5d40002.js",
     "static/js/787.7ec122fa.chunk.js": "/static/js/787.7ec122fa.chunk.js",
     "static/media/my pic transparent bg.png": "/static/media/my pic transparent bg.33033d7b625c7b2592e1.png",
-    "static/media/Alexus Lim Resume.pdf": "/static/media/Alexus Lim Resume.c92ea66446b4b7596955.pdf",
     "static/media/Singapore_Police_Force_crest.png": "/static/media/Singapore_Police_Force_crest.e104d0902b8627ffdb0e.png",
     "static/media/sinopec logo.png": "/static/media/sinopec logo.508802383a3a2f7a68e4.png",
+    "static/media/Alexus Lim Resume.pdf": "/static/media/Alexus Lim Resume.583dfd0aab8746af2acf.pdf",
     "index.html": "/index.html",
-    "main.81e224ff.css.map": "/static/css/main.81e224ff.css.map",
-    "main.b59b3819.js.map": "/static/js/main.b59b3819.js.map",
+    "main.b447d1e4.css.map": "/static/css/main.b447d1e4.css.map",
+    "main.a5d40002.js.map": "/static/js/main.a5d40002.js.map",
     "787.7ec122fa.chunk.js.map": "/static/js/787.7ec122fa.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81e224ff.css",
-    "static/js/main.b59b3819.js"
+    "static/css/main.b447d1e4.css",
+    "static/js/main.a5d40002.js"
   ]
 }
