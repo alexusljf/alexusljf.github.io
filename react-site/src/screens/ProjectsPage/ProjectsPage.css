@@ -1,0 +1,24 @@
+.projectPage{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(233, 220, 204, 0.884);
+    padding-top: 12vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.projectContainer{
+    display:grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.projectDiv{
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 1.6;
+}
+article{
+    text-align: left;
+}
+a:visited, a:link{
+    color: black;
+}

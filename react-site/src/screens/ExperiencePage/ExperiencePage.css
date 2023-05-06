@@ -1,0 +1,29 @@
+.experiencePage{
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(233, 220, 204, 0.884);
+    padding-top: 8vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 18vh;
+}
+.experienceContainer{
+    align-items: center;
+}
+.experienceDiv{
+    text-align: center;
+    display: block;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 1.6;
+}
+.workLogo{
+    width: 15%;
+    border-color: black;
+    border-style: solid;
+    object-fit: fill;
+    object-position: center;
+    background-color: white;
+}

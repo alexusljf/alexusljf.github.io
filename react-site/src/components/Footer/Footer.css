@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+.homeButton, .middleButton{ 
+    cursor: pointer;
+    font-size: 20px;
+    background-color: black;
+    color: rgb(218, 194, 165);
+    border-color: black;
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.2s;
+}
+.homeButton:hover, .middleButton:hover{
+    background-color: rgba(80, 64, 43, 0.884);
+    border-color: rgba(80, 64, 43, 0.884);
+    color: white;
+    
+}
+.topBar{
+    background-color: rgb(218, 194, 165);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    display:flex;
+    flex-direction: row;
+    height: 7vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    justify-content: space-between;
+    
+}
+.middleButton{
+    margin-left: 1vw; 
+    margin-right: 1vw;
+}
+.leftSection{
+    display:flex;
+    flex: 1;
+    align-items:center;
+    justify-content: start;
+}
+.middleSection{
+    display:flex;
+    flex: 1;
+    align-items:center;
+    justify-content: center;
+}
+.rightSection{
+    display:flex;
+    flex: 1;
+    align-items:center;
+    justify-content: end;
+}
+.faicon{
+    font-size:36px;
+    margin-left:10px; 
+    margin-right: 10px; 
+    color:black
+}
