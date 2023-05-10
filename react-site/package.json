@@ -1,7 +1,7 @@
 {
   "name": "react-site",
-  "version": "0.1.1",
-  "homepage": "https://alexusljf.com/",
+  "version": "0.1.0",
+  "homepage": "https://alexusljf.github.io/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -13,7 +13,6 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-moving-text": "^0.0.7",
     "react-router": "^6.11.1",
     "react-router-dom": "^6.11.1",
     "react-scripts": "^5.0.1",
