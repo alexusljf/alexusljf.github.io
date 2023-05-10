@@ -7,7 +7,7 @@ function HomePage() {
 
   return (
     
-    <div id = "mainSection" className = "mainPage">
+    <div id = "aboutSection" className = "mainPage">
 
     <div className = "bioContainer">
         <h1 style = {{display: "inline-block", textAlign: "center" , borderBottom: "solid 1px #000"}}>
