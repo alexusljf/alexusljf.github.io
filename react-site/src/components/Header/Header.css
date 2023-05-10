@@ -23,6 +23,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 /* These use vh and vw, kinda dont know so using the old px one
 .topBar{
     background-color: rgb(218, 194, 165);
@@ -55,7 +56,6 @@ html{
     padding-left: 30px;
     padding-right: 30px;
     justify-content: space-between;
-    
 }
 .middleButton{
     margin-left:10px; 
@@ -84,4 +84,25 @@ html{
     margin-left:10px; 
     margin-right: 10px; 
     color:black
+}
+
+@media (max-width: 430px){
+    .homeButton, .middleButton{ 
+        font-size: 12px;
+        padding: 5px;
+    }
+    .topBar{
+        height: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .middleButton{
+        margin-left: 5px; 
+        margin-right: 5px;
+    }
+    .faicon{
+        font-size: 24px;
+        margin-left: 5px; 
+        margin-right: 5px; 
+    }
 }

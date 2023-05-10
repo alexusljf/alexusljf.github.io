@@ -17,8 +17,7 @@
     background-color: rgb(218, 194, 165);
 }
 .pictureContainer{
-    flex: 1;
-    padding-left: 75px;
+    padding-right: 75px;
 }
 .bioContainer{
     flex: 3;
@@ -30,4 +29,33 @@ article{
 }
 .resumeLink:visited{
     color: black;
+}
+
+@media (max-width: 430px){
+    .mainPage{
+        display: block;
+        padding-top: 10vh;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .myPic{
+        position: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        border-color: black;
+        border-style: solid;
+        object-fit: contain;
+        object-position: center;
+        background-color: rgb(218, 194, 165);
+    }
+    .pictureContainer{
+        padding-right: 0;
+    }
+    article{
+        line-height: 1.6; 
+    }
+    .resumeLink:visited{
+        color: black;
+    }
 }

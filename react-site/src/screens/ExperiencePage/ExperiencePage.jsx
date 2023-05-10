@@ -11,7 +11,7 @@ function ExperiencePage() {
   <div id="experienceSection" className="experiencePage">
     <header>
       <h1 style={{ display: "inline-block", textAlign: "center" , borderBottom: "solid 1px #000" }}>Experience</h1>
-      <h2 style={{ textAlign: "center", marginBottom: 30 }}>
+      <h2 className = "headerText">
         No experience in the tech industry yet! Looking for internships :)
       </h2>
     </header>

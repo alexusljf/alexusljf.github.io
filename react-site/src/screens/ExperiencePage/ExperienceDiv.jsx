@@ -8,7 +8,7 @@ function ExperienceDiv(props) {
   <figure>
     <img src = {props.img} alt = {props.altText} className = "workLogo"/>
   </figure> 
-  <article style={{ textAlign: "center" }}>
+  <article style={{ textAlign: "left" }}>
     <h1 style={{ textAlign: "center" , borderBottom: "solid 1px #000"}}>
       {props.role} <br />
       {props.companyName} <br />

@@ -8,7 +8,9 @@ function HomePage() {
   return (
     
     <div id = "mainSection" className = "mainPage">
-
+    <div className = "pictureContainer">
+        <img src = {myPic} className = "myPic" alt = "Picture of my face"/> 
+    </div>
     <div className = "bioContainer">
         <h1 style = {{display: "inline-block", textAlign: "center" , borderBottom: "solid 1px #000"}}>
             Hello! I'm Alexus!
@@ -26,9 +28,6 @@ function HomePage() {
             </p>
         </article>
         <a href = {resumePDF} target = "_blank" className = 'resumeLink'>Resume (Last Updated 05/05/2023)</a>
-    </div>
-    <div className = "pictureContainer">
-        <img src = {myPic} className = "myPic" alt = "Picture of my face"/> 
     </div>
 </div>
   );
