@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState, useContext } from 'react';
 import "./ExperiencePage.css";
 import sinopecLogo from "./sinopec logo.png"
 import spfLogo from "./Singapore_Police_Force_crest.png"
 import ExperienceDiv from "./ExperienceDiv";
+import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
-function ExperiencePage() {
-
+const ExperiencePage = () => {
+  const { isNightMode } = useContext(NightModeContext);
   return (
     
   <div id="experienceSection" className="experiencePage">
     <header>
-      <h1 style={{ display: "inline-block", textAlign: "center" , borderBottom: "solid 1px #000" }}>Experience</h1>
+      <h1 className={isNightMode === false ? "heading" : "headingNight"}>Experience</h1>
       <h2 className = "headerText">
         No experience in the tech industry yet! Looking for internships :)
       </h2>

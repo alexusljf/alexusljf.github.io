@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useState, useContext } from 'react';
 import "./HomePage.css";
 import myPic from "./photo2.png";
 import resumePDF from "./Alexus Lim Resume.pdf";
+import NightModeSwitch from '../../components/NightModeToggle/NightModeSwitch';
+import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
-function HomePage() {
+const HomePage = () => {
+    const { isNightMode } = useContext(NightModeContext);
 
   return (
     
     <div id = "mainSection" className = "mainPage">
     <div className = "pictureContainer">
-        <img src = {myPic} className = "myPic" alt = "Picture of my face"/> 
+        <img src = {myPic} className={isNightMode === false ? "myPic" : "myPicNight"}/> 
+        <NightModeSwitch/>
     </div>
     <div className = "bioContainer">
-        <h1 style = {{display: "inline-block", textAlign: "center" , borderBottom: "solid 1px #000"}}>
+        <h1 className={isNightMode === false ? "heading" : "headingNight"}>
             Hello! I'm Alexus!
         </h1>
         <article>
@@ -27,9 +31,9 @@ function HomePage() {
             <b>Other Skills</b>: GitHub, Zoom, Jira, Microsoft Teams <br/>
             </p>
         </article>
-        <a href = {resumePDF} target = "_blank" className = 'resumeLink'>Resume (Last Updated 05/05/2023)</a>
+        <a href = {resumePDF} target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>Resume (Last Updated 05/05/2023)</a>
     </div>
-</div>
+    </div>
   );
 }
 

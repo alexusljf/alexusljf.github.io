@@ -4,6 +4,13 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.AppNight {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

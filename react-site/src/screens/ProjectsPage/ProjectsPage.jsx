@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState, useContext } from 'react';
 import "./ProjectsPage.css";
 import Header from "../../components/Header/Header";
 import ProjectDiv from "./ProjectDiv";
+import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
-function ProjectsPage() {
+const ProjectsPage = () => {
+    const { isNightMode } = useContext(NightModeContext);
 
   return (
-    <div id="projectSection" className="projectPage">
+    <div id="projectSection"  className = "projectPage">
         <Header/>
     <header>
-      <h1 style={{ display: "inline-block", textAlign: "center" , borderBottom: "solid 1px #000"}}>Projects</h1>
+      <h1 className={isNightMode === false ? "heading" : "headingNight"}>Projects</h1>
     </header>
     <div className="projectContainer">
     <ProjectDiv

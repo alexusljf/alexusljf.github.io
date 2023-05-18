@@ -1,10 +1,27 @@
+.heading{
+    display: inline-block;
+    text-align: "center" ;
+    border-bottom: solid 1px black;
+}
+.headingNight{
+    display: inline-block;
+    text-align: "center" ;
+    border-bottom: solid 1px white;
+}
+.divHeading{
+    text-align: center ;
+    border-bottom: solid 1px black;
+}
+.divHeadingNight{
+    text-align: center ;
+    border-bottom: solid 1px white;
+}
 .headerText{
     margin-top: 0;
     text-align : center;
     margin-bottom: 20px;
 }
 .experiencePage{
-    margin-top: 2vh;
     padding-top: 10vh;
     padding-left: 3vw;
     padding-right: 3vw;
@@ -29,6 +46,20 @@
     padding-right: 8px;
     line-height: 1.6;
 }
+.experienceDivNight{
+    text-align: center;
+    display: block;
+    width: 50%;
+    border-width: 1px;
+    border-radius: 6px;
+    box-shadow: 0;
+    border-color: white;
+    background-color: rgb(36, 36, 36);
+    border-style: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+    line-height: 1.6;
+}
 .workLogo{
     width: 30%;
     border-color: black;
@@ -39,20 +70,7 @@
     margin-bottom: -16px;
 }
 @media (max-width: 430px){
-    .experiencePage{
-        margin-top: 2vh;
-        padding-top: 10vh;
-        padding-left: 3vw;
-        padding-right: 3vw;
-    }
-    .experienceContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 40px;
-    }
-    .experienceDiv{
+    .experienceDiv, .experienceDivNight{
         text-align: center;
         display: block;
         padding-left: 8px;
@@ -79,6 +97,19 @@
         padding-right: 8px;
         line-height: 1.6;
     }
+    .experienceDivNight{
+        width: 90%;
+        border-width: 1px;
+        border-radius: 6px;
+        box-shadow: 0;
+        border-color: white;
+        background-color: rgb(36, 36, 36);
+        border-style: solid;
+        padding-left: 8px;
+        padding-right: 8px;
+        line-height: 1.6;
+    }
+    
     article{
         text-align: left;
     }

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState, useContext } from 'react';
+import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 import "./ProjectsPage.css";
 
-function ProjectDiv(props) {
+const ProjectDiv = (props) => {
+  const { isNightMode } = useContext(NightModeContext);
 
   return (
-  <div className="projectDiv">
+  <div className = {isNightMode === false ? "projectDiv" : "projectDivNight"}>
   <article>
-    <h1 style={{ textAlign: "center" , borderBottom: "solid 1px #000"}}>
+    <h1 className={isNightMode === false ? "divHeading" : "divHeadingNight"}>
       {props.modName} <br />
       {props.projectName} <br />
     </h1>
@@ -16,7 +18,7 @@ function ProjectDiv(props) {
     {props.toolsUsed} <br />
     <br />
     <div className = 'buttonDiv'>
-      <a href={props.githubLink} target="_blank" className = "githubButton">
+      <a href={props.githubLink} target="_blank" className = {isNightMode === false ? "githubButton" : "githubButtonNight"}>
         GitHub Repo
       </a>
     </div>

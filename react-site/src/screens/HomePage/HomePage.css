@@ -6,6 +6,16 @@
     flex-direction: row;
     justify-content: space-between;
 }
+.heading{
+    display: inline-block;
+    text-align: "center" ;
+    border-bottom: solid 1px black;
+}
+.headingNight{
+    display: inline-block;
+    text-align: "center" ;
+    border-bottom: solid 1px white;
+}
 .myPic{
     width: 300px;
     height: 300px;
@@ -16,8 +26,23 @@
     object-position: center;
     background-color: rgb(218, 194, 165);
 }
+.myPicNight{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    border-color: white;
+    border-style: solid;
+    object-fit: contain;
+    object-position: center;
+    background-color: rgb(36, 36, 36);
+}
 .pictureContainer{
+    padding-top : 21.4px;
     padding-right: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
 }
 .bioContainer{
     flex: 3;
@@ -27,7 +52,10 @@
 article{
     line-height: 1.6; 
 }
-.resumeLink:visited{
+.resumeLinkNight, .resumeLinkNight:visited{
+    color: white;
+}
+.resumeLink, .resumeLink:visited{
     color: black;
 }
 
@@ -49,6 +77,17 @@ article{
         object-position: center;
         background-color: rgb(218, 194, 165);
     }
+    .myPicNight{
+        position: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 300px;
+        border-color: white;
+        border-style: solid;
+        object-fit: contain;
+        object-position: center;
+        background-color: rgb(36, 36, 36);
+    }
     .pictureContainer{
         padding-right: 0;
     }
@@ -57,5 +96,8 @@ article{
     }
     .resumeLink:visited{
         color: black;
+    }
+    .resumeLinkNight, .resumeLinkNight:visited{
+        color: white;
     }
 }

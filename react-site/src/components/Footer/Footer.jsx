@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState, useContext} from "react";
+import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 import './Footer.css';
 
-function Footer(){
+const Footer = () =>{
+    const { isNightMode } = useContext(NightModeContext);
     return(
-        <footer>
+        <footer className = {isNightMode === false ? "footer" : "footerNight"}>
             <p> Thanks for checking out my website! 
                 It's still a work in progress and I'll be adding on more features as I learn more about web dev :) </p>
         </footer>
