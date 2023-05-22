@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import "./ExperiencePage.css";
 import sinopecLogo from "./sinopec logo.png"
 import spfLogo from "./Singapore_Police_Force_crest.png"

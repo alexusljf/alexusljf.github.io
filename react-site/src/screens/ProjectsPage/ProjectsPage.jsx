@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import "./ProjectsPage.css";
 import Header from "../../components/Header/Header";
 import ProjectDiv from "./ProjectDiv";

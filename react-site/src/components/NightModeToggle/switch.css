@@ -15,3 +15,15 @@
     margin: 10px;
     color: white;
 }
+.faicon{
+    font-size:36px;
+    margin-left:10px; 
+    margin-right: 10px; 
+    color:black;
+}
+.faiconNight{
+    font-size:36px;
+    margin-left:10px; 
+    margin-right: 10px; 
+    color:white;
+}

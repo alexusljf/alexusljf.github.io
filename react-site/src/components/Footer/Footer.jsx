@@ -1,4 +1,4 @@
-import React, {useState, useContext} from "react";
+import React, {useContext} from "react";
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 import './Footer.css';
 

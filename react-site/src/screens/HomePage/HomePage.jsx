@@ -1,7 +1,6 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import "./HomePage.css";
 import myPic from "./photo2.png";
-import resumePDF from "./Alexus Lim Resume.pdf";
 import NightModeSwitch from '../../components/NightModeToggle/NightModeSwitch';
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
@@ -31,7 +30,7 @@ const HomePage = () => {
             <b>Other Skills</b>: GitHub, Zoom, Jira, Microsoft Teams <br/>
             </p>
         </article>
-        <a href = {resumePDF} target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>Resume (Last Updated 05/05/2023)</a>
+        <a href = "https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing" target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>Resume</a>
     </div>
     </div>
   );
