@@ -19,14 +19,14 @@ const HomePage = () => {
             Hello! I'm Alexus!
         </h1>
         <article>
-            I'm pursuing a Bachelor of Engineering in Computer Science at Nanyang Technological University Singapore. <br/>
-            I am deeply interested in how computer programs work. My interest started from a young age, when I wondered how simple inputs on my mouse and keyboard were able to translate to actions in video games. I watched a few introductory coding tutorials on YouTube and decided that this was something I wanted to pursue. <br/>            
-            I don't have any work experience relevant to this field yet but I am keen to do internships, learn more and improve myself! <br/>
+            I'm pursuing a Bachelor of Engineering in Computer Science at Nanyang Technological University Singapore. <br/> 
+            I am deeply interested in how computer programs work. My interest started from a young age, when I wondered how simple inputs on my mouse and keyboard were able to translate to actions in video games. I watched a few introductory coding tutorials on YouTube and decided that this was something I wanted to pursue. <br/> <br/>           
+            I don't have any work experience relevant to this field yet but I am keen to learn more and improve myself! <br/>
            
             <p>
             <b>Languages</b>: English, Chinese, Malay <br/>
-            <b>Programming Languages</b>: Java, Python, C, SQL <br/>
-            <b>Web Development</b>: HTML, CSS, Javascript, ReactJS <br/>
+            <b>Programming Languages</b>: Java, Python, C, SQL, Javascript <br/>
+            <b>Web Development</b>: HTML, CSS, ReactJS <br/>
             <b>Other Skills</b>: GitHub, Zoom, Jira, Microsoft Teams <br/>
             </p>
         </article>

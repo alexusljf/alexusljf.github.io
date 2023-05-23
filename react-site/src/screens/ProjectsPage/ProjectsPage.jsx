@@ -17,10 +17,10 @@ const ProjectsPage = () => {
     <ProjectDiv
         modName = "Software Engineering Project"
         projectName = "REvaluate"
-        description1 = "Developed a website where users can view and compare housing prices in Singapore; implemented using ReactJS, NodeJS, CSS and MongoDB in a group of 6."
+        description1 = "Developed a website where users can view and compare housing prices in Singapore; implemented using ReactJS, NodeJS, CSS and MongoDB in a group of 6. Worked on the Frontend."
         description2 = "Formulated website’s functionality utilising various diagrams, such as Use-Case diagrams, Sequence Diagrams and State Diagrams. Designed the User Interface with Figma."        
         description3 = "Engaged in agile project management, collaborated on Jira using agile methodology practices. Brainstormed and generated ideas for project. Pitched ideas for features to expand utility and functionality"
-        toolsUsed = "Tools used: ReactJS, NodeJS, CSS and MongoDB"
+        toolsUsed = "Tools used: ReactJS, CSS"
         githubLink = "https://github.com/RishJohn14/HousingInfo"
       />
     <ProjectDiv

@@ -11,9 +11,9 @@ const NightModeSwitch = () => {
 
   return (
     <div className="switch">      
-      <FontAwesomeIcon icon={faSun} className = {isNightMode === false ? "faicon" : "faiconNight"}/>
+      <FontAwesomeIcon icon={faSun} className = {isNightMode === false ? "NightSwitchFaicon" : "NightSwitchFaiconNight"}/>
       <ReactSwitch onChange={toggleNightMode} checked={isNightMode} />
-      <FontAwesomeIcon icon={faMoon} className = {isNightMode === false ? "faicon" : "faiconNight"}/>
+      <FontAwesomeIcon icon={faMoon} className = {isNightMode === false ? "NightSwitchFaicon" : "NightSwitchFaiconNight"}/>
     </div>
   );
 };
