@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import "./ExperiencePage.css";
 import sinopecLogo from "./sinopec logo.png"
 import spfLogo from "./Singapore_Police_Force_crest.png"
+import NIELogo from "./NIE_Logo.png"
 import ExperienceDiv from "./ExperienceDiv";
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
@@ -17,6 +18,15 @@ const ExperiencePage = () => {
       </h2>
     </header>
     <div className="experienceContainer">
+      <ExperienceDiv
+        img = {NIELogo}
+        altText = "NIE Logo"
+        role = "Part-time Student Assistant"
+        companyName = "National Institute of Education, Singapore"
+        date = "Mar 2021 - Present"
+        description1 = "Under NTU's Work-Study Scheme. This role at the NIE Library consists of Administration and Clerical Duties."
+        description2 = "Assisted in hosting events at the library."
+      />
       <ExperienceDiv
         img = {sinopecLogo}
         altText = "Sinopec Logo"

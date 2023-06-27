@@ -9,9 +9,22 @@ const ProjectsPage = () => {
 
   return (
     <div id="projectSection"  className = "projectPage">
-        <Header/>
     <header>
-      <h1 className={isNightMode === false ? "heading" : "headingNight"}>Projects</h1>
+      <h1 className={isNightMode === false ? "heading" : "headingNight"}> Personal Projects </h1> <br></br>
+      <div className="projectContainer">
+        <ProjectDiv
+          modName = "API Practice Project"
+          projectName = "Should I Run?"
+          description1 = "Developed a web app in React using OpenWeather’s Weather API, hosted on GitHub Pages."
+          description2 = "Users can enter a city’s name and view the current temperature and weather conditions. A recommendation if the user should run will be made based on the current weather."
+          description3 = "Learning how to use APIs by making a weather web app."
+          toolsUsed = "Tools used: ReactJS, CSS, OpenWeather’s Weather API"
+          githubLink = "https://github.com/alexusljf/Should-I-Run"
+        />  
+     </div>
+      
+
+      <h1 className={isNightMode === false ? "heading" : "headingNight"}> Academic Projects </h1>
     </header>
     <div className="projectContainer">
     <ProjectDiv
