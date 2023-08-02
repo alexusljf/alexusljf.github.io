@@ -37,11 +37,9 @@
     text-align: center;
     display: block;
     width: 50%;
-    border-width: 1px;
+    border: solid black 1px;
     border-radius: 6px;
     box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
-    border-color: black;
-    border-style: solid;
     padding-left: 8px;
     padding-right: 8px;
     line-height: 1.6;
@@ -62,8 +60,8 @@
 }
 .workLogo{
     width: 30%;
-    border-color: black;
-    border-style: solid;
+    border: solid black 1px;
+    border-radius: 10px;
     object-fit: fill;
     object-position: center;
     background-color: white;

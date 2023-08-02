@@ -12,11 +12,12 @@ const ProjectDiv = (props) => {
       {props.modName} <br />
       {props.projectName} <br />
     </h1>
-    {props.description1} <br />
-    {props.description2} <br />
-    {props.description3} <br />
-    {props.toolsUsed} <br />
-    <br />
+    <ul className='descriptions'>
+      <li> {props.description1} </li>
+      <li> {props.description2} </li>
+      <li> {props.description3} </li>
+      <li> {props.toolsUsed} </li>
+    </ul>
     <div className = 'buttonDiv'>
       <a href={props.githubLink} target="_blank" className = {isNightMode === false ? "githubButton" : "githubButtonNight"}>
         GitHub Repo
@@ -28,4 +29,34 @@ const ProjectDiv = (props) => {
   );
 }
 
-export default ProjectDiv;
+const ProjectDivLink = (props) => {
+  const { isNightMode } = useContext(NightModeContext);
+
+  return (
+  <div className = {isNightMode === false ? "projectDiv" : "projectDivNight"}>
+  <article>
+    <h1 className={isNightMode === false ? "divHeading" : "divHeadingNight"}>
+      {props.modName} <br />
+      {props.projectName} <br />
+    </h1>
+    <ul className='descriptions'>
+      <li> {props.description1} </li>
+      {props.description2 && <li> {props.description2} </li>}
+      {props.description3 && <li> {props.description3} </li>}
+      <li> {props.toolsUsed} </li>
+    </ul>
+    <div className = 'buttonDivLinks'>
+      <a href={props.githubLink} target="_blank" className = {isNightMode === false ? "githubButton" : "githubButtonNight"}>
+        GitHub Repo
+      </a>
+      <a href={props.githubPagesLink} target="_blank" className = {isNightMode === false ? "githubButton" : "githubButtonNight"}>
+        Website
+      </a>
+    </div>
+    <br />
+  </article>
+  </div>
+  );
+}
+
+export {ProjectDiv, ProjectDivLink};

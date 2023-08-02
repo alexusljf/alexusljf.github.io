@@ -16,9 +16,11 @@ const ExperienceDiv = (props) => {
       {props.companyName} <br />
       {props.date} <br />
     </h1>
-    {props.description1} <br />
-    {props.description2} <br />
-    {props.description3} <br />
+    <ul className='descriptions'>
+      <li> {props.description1} </li>
+      {props.description2 && <li> {props.description2} </li>}
+      {props.description3 && <li> {props.description3} </li>}
+    </ul>
   </article>
   <br /> 
   </div>

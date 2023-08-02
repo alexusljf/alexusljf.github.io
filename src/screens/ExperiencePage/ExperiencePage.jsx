@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import "./ExperiencePage.css";
-import sinopecLogo from "./sinopec logo.png"
-import spfLogo from "./Singapore_Police_Force_crest.png"
-import NIELogo from "./NIE_Logo.png"
+import sinopecLogo from "./sinopec logo.png";
+import spfLogo from "./Singapore_Police_Force_crest.png";
+import NIELogo from "./NIE_Logo.png";
+import shopeeLogo from "./Shopee_logo.svg.png";
 import ExperienceDiv from "./ExperienceDiv";
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
@@ -23,10 +24,20 @@ const ExperiencePage = () => {
         altText = "NIE Logo"
         role = "Part-time Student Assistant"
         companyName = "National Institute of Education, Singapore"
-        date = "Mar 2021 - Present"
-        description1 = "Under NTU's Work-Study Scheme. This role at the NIE Library consists of Administration and Clerical Duties."
-        description2 = "Assisted in hosting events at the library."
+        date = "May 2023 - Present"
+        description1 = "Under NTU's Work-Study Scheme. This role at the NIE Library involves Office Administration and Information Management duties."
+        description2 = "Assisted in hosting events at the library and also scanning and archiving of old books."
       />
+      <ExperienceDiv
+        img = {shopeeLogo}
+        altText = "Shopee Logo"
+        role = "Part-time Warehouse Assistant"
+        companyName = "Shopee"
+        date = "May 2022 - Jul 2022"
+        description1 = "My job scope was to pick, sort, label and pack online orders."
+        description2 = "Worked together with teams of 10 daily and also trained newcomers."
+        description3 = "I also did the loading and unloading of pallets with electric ride-on Jungheinrich pallet jacks"
+      />      
       <ExperienceDiv
         img = {sinopecLogo}
         altText = "Sinopec Logo"
@@ -34,7 +45,7 @@ const ExperiencePage = () => {
         companyName = "Sinopec Lubricant (Singapore) Pte. Ltd"
         date = "Mar 2021 - April 2021"
         description1 = "Managed customers and answered queries, also guided traffic."
-        description2 = "Helped to refine the interpersonal skills gained from national service."
+        description2 = "Helped to refine the interpersonal skills gained from National Service."
       />
       <ExperienceDiv
         img = {spfLogo}
