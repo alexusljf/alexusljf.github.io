@@ -8,12 +8,10 @@
 }
 .heading{
     display: inline-block;
-    text-align: "center" ;
     border-bottom: solid 1px black;
 }
 .headingNight{
     display: inline-block;
-    text-align: "center" ;
     border-bottom: solid 1px white;
 }
 .myPic{
@@ -52,11 +50,13 @@
 article{
     line-height: 1.6; 
 }
-.resumeLinkNight, .resumeLinkNight:visited{
-    color: white;
-}
 .resumeLink, .resumeLink:visited{
     color: black;
+    font-weight: bold;
+}
+.resumeLinkNight, .resumeLinkNight:visited{
+    color: white;
+    font-weight: bold;
 }
 
 @media (max-width: 430px){

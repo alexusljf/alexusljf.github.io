@@ -7,7 +7,7 @@ const Footer = () =>{
     return(
         <footer className = {isNightMode === false ? "footer" : "footerNight"}>
             <p> Thanks for checking out my website! 
-                It's still a work in progress and I'll be adding on more features as I learn more about web dev :) </p>
+                 I'll be adding on more features as I learn more about web dev :) </p>
         </footer>
     )
 }

@@ -14,9 +14,6 @@ const ExperiencePage = () => {
   <div id="experienceSection" className="experiencePage">
     <header>
       <h1 className={isNightMode === false ? "heading" : "headingNight"}>Experience</h1>
-      <h2 className = "headerText">
-        No experience in the tech industry yet! Looking for internships :)
-      </h2>
     </header>
     <div className="experienceContainer">
       <ExperienceDiv

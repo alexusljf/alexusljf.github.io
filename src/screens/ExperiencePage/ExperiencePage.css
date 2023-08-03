@@ -34,9 +34,7 @@
     row-gap: 40px;
 }
 .experienceDiv{
-    text-align: center;
-    display: block;
-    width: 50%;
+    width: 35%;
     border: solid black 1px;
     border-radius: 6px;
     box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
@@ -45,8 +43,6 @@
     line-height: 1.6;
 }
 .experienceDivNight{
-    text-align: center;
-    display: block;
     width: 50%;
     border-width: 1px;
     border-radius: 6px;

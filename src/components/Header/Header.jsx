@@ -3,6 +3,7 @@ import { NightModeContext } from '../../components/NightModeToggle/NightModeCont
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import NightModeSwitch from '../NightModeToggle/NightModeSwitch'
 import './Header.css';
 
 const Header = () => {
@@ -12,13 +13,14 @@ const Header = () => {
         <>
         <div className = {isNightMode === false ? "topBar" : "topBarNight"}>
             <div className='leftSection'>
-                <a href = "#mainSection">
-                <button className = {isNightMode === false ? "homeButton" : "homeButtonNight"}>
-                    About Me
-                </button>
-            </a>
+                <NightModeSwitch className = "switch"/>
             </div>
         <div className="middleSection">
+                <a href = "#mainSection">
+                    <button className = {isNightMode === false ? "middleButton" : "middleButtonNight"}>
+                        About Me
+                    </button>
+                </a>
                 <a href = "#projectSection">
                     <button className = {isNightMode === false ? "middleButton" : "middleButtonNight"}>
                         Projects

@@ -5,6 +5,7 @@ html{
 .homeButton, .middleButton{ 
     cursor: pointer;
     font-size: 20px;
+    white-space: nowrap;
     background-color: black;
     color: rgb(218, 194, 165);
     border-color: black;
@@ -25,6 +26,7 @@ html{
 .homeButtonNight, .middleButtonNight{ 
     cursor: pointer;
     font-size: 20px;
+    white-space: nowrap;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border-color: black;
@@ -56,7 +58,7 @@ html{
     justify-content: space-between;
 }
 .topBarNight{
-    background-color: rgb(36,36,36);
+    background-color: rgb(26, 25, 25);
     position: fixed;
     top:0;
     left:0;
@@ -108,9 +110,14 @@ html{
 .faiconNight:hover{
     color: rgba(0, 0, 0, 0.884);
 }
-
+.switch{
+    margin-left:25px; 
+    width: 100px;
+    height: 100px;    
+}
 @media (max-width: 430px){
     .homeButton, .middleButton, .homeButtonNight, .middleButtonNight{ 
+        display:none;
         font-size: 12px;
         padding: 5px;
     }
@@ -120,6 +127,7 @@ html{
         padding-right: 10px;
     }
     .middleButton, .middleButtonNight{
+        display:none;
         margin-left: 5px; 
         margin-right: 5px;
     }
@@ -127,5 +135,11 @@ html{
         font-size: 24px;
         margin-left: 5px; 
         margin-right: 5px; 
+    }
+    
+    .switch{
+        margin-left: 6px; 
+        width: 100px;
+        height: 100px;    
     }
 }

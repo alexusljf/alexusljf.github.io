@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import "./HomePage.css";
 import myPic from "./photo2.png";
-import NightModeSwitch from '../../components/NightModeToggle/NightModeSwitch';
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
 const HomePage = () => {
@@ -12,7 +11,6 @@ const HomePage = () => {
     <div id = "mainSection" className = "mainPage">
     <div className = "pictureContainer">
         <img src = {myPic} className={isNightMode === false ? "myPic" : "myPicNight"}/> 
-        <NightModeSwitch/>
     </div>
     <div className = "bioContainer">
         <h1 className={isNightMode === false ? "heading" : "headingNight"}>
@@ -20,8 +18,8 @@ const HomePage = () => {
         </h1>
         <article>
             I'm pursuing a Bachelor of Engineering in Computer Science at Nanyang Technological University Singapore. <br/> 
-            I am deeply interested in how computer programs work. My interest started from a young age, when I wondered how simple inputs on my mouse and keyboard were able to translate to actions in video games. I watched a few introductory coding tutorials on YouTube and decided that this was something I wanted to pursue. <br/> <br/>           
-            I don't have any work experience relevant to this field yet but I am keen to learn more and improve myself! <br/>
+            I started using the Family PC from a very young age. I have always been deeply fascinated by how lines of code can translate to amazing video games and websites and wanted to learn how to build programs too.<br/> <br/>           
+            No experience in the tech industry yet! Interested in doing internships :)
            
             <p>
             <b>Languages</b>: English, Chinese, Malay <br/>
@@ -30,7 +28,7 @@ const HomePage = () => {
             <b>Other Skills</b>: GitHub, Zoom, Jira, Microsoft Teams <br/>
             </p>
         </article>
-        <a href = "https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing" target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>Resume</a>
+        <a href = "https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing" target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>My Resume</a>
     </div>
     </div>
   );

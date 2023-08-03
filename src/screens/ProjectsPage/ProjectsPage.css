@@ -23,9 +23,9 @@
 }
 .projectContainer{
     display:grid; 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
-    align-items: top;
+    justify-content: center;
 }
 .projectDiv{
     border-width: 1px;
@@ -37,6 +37,15 @@
     padding-right: 8px;
     line-height: 1.6;
 }
+/* Center the two projectDiv items when there are only two items in the grid */
+.projectContainer.two-items .projectDiv {
+    grid-row: span 1;
+  }
+  
+  /* Center the three projectDiv items when there are three items in the grid */
+  .projectContainer.three-items .projectDiv {
+    grid-column: span 1;
+  }
 .projectDivNight{
     border-width: 1px;
     border-radius: 6px;
@@ -72,6 +81,7 @@ article{
     font-family: 'Montserrat', sans-serif;
     transition: 0.2s;
     text-decoration: none;
+    white-space: nowrap;
 }
 .githubButton:hover{
     background-color: rgba(80, 64, 43, 0.884);
@@ -93,6 +103,7 @@ article{
     font-family: 'Montserrat', sans-serif;
     transition: 0.2s;
     text-decoration: none;
+    white-space: nowrap;
 }
 .githubButtonNight:hover{
     background-color: rgba(0, 0, 0, 0.884);
@@ -119,5 +130,6 @@ article{
     }
     .githubButton, .githubButtonNight{ 
         font-size: 16px;
+        white-space: nowrap;
     }
 }

@@ -1,4 +1,3 @@
-// NightModeSwitch.js
 import "./switch.css";
 import React, { useContext } from 'react';
 import { NightModeContext } from './NightModeContext';
