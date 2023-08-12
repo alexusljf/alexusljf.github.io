@@ -7,24 +7,19 @@
     justify-content: center;
     align-items: center;
 }
-.label {
-    margin: 10px;
-}
-.labelNight{
-    margin: 10px;
-    color: white;
-}
 .NightSwitchFaicon{
     font-size:36px;
     margin-left:10px; 
     margin-right: 10px; 
-    color:black;
+    color:#293129;
+    transition: 0.2s;
 }
 .NightSwitchFaiconNight{
     font-size:36px;
     margin-left:10px; 
     margin-right: 10px; 
     color:white;
+    transition: 0.2s;
 }
 @media (max-width: 430px){
     .NightSwitchFaicon, .NightSwitchFaiconNight{

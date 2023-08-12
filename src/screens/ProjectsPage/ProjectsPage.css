@@ -7,19 +7,23 @@
     display: inline-block;
     text-align: center ;
     border-bottom: solid 1px black;
+    transition: 0.2s;
 }
 .headingNight{
     display: inline-block;
     text-align: center ;
     border-bottom: solid 1px white;
+    transition: 0.2s;
 }
 .divHeading{
     text-align: center ;
     border-bottom: solid 1px black;
+    transition: 0.25s;
 }
 .divHeadingNight{
     text-align: center ;
     border-bottom: solid 1px white;
+    transition: 0.25s;
 }
 .projectContainer{
     display:grid; 
@@ -32,20 +36,13 @@
     border-radius: 6px;
     box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
     border-color: black;
+    background-color: #fff1de;
     border-style: solid;
     padding-left: 8px;
     padding-right: 8px;
     line-height: 1.6;
+    transition: 0.25s;
 }
-/* Center the two projectDiv items when there are only two items in the grid */
-.projectContainer.two-items .projectDiv {
-    grid-row: span 1;
-  }
-  
-  /* Center the three projectDiv items when there are three items in the grid */
-  .projectContainer.three-items .projectDiv {
-    grid-column: span 1;
-  }
 .projectDivNight{
     border-width: 1px;
     border-radius: 6px;
@@ -56,9 +53,16 @@
     padding-left: 8px;
     padding-right: 8px;
     line-height: 1.6;
+    transition: 0.25s;
 }
-.descriptions{
-    
+/* Center the two projectDiv items when there are only two items in the grid */
+.projectContainer.two-items .projectDiv {
+    grid-row: span 1;
+}
+  
+/* Center the three projectDiv items when there are three items in the grid */
+.projectContainer.three-items .projectDiv {
+    grid-column: span 1;
 }
 li{
     margin: 10px 5px;
@@ -69,9 +73,9 @@ article{
 .githubButton{ 
     cursor: pointer;
     font-size: 20px;
-    background-color: black;
-    color: rgb(218, 194, 165);
-    border-color: black;
+    background-color: #293129;
+    color: #fff1de;
+    border-color: #293129;
     border-style: solid;
     padding-left: 20px;
     padding-right: 20px;
@@ -84,9 +88,9 @@ article{
     white-space: nowrap;
 }
 .githubButton:hover{
-    background-color: rgba(80, 64, 43, 0.884);
-    border-color: rgba(80, 64, 43, 0.884);
-    color: white;
+    background-color: #7D8F69;
+    color: #395144;
+    border-color: #7D8F69;
 }
 .githubButtonNight{ 
     cursor: pointer;

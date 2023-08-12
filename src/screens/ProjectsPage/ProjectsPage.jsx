@@ -14,8 +14,8 @@ const ProjectsPage = () => {
         <ProjectDivLink
           modName = "API Practice Project"
           projectName = "Hangman Game"
-          description1 = "Developed a Hangman Game."
-          description2 = "Uses a random word API to fetch random words that will be used for the game."
+          description1 = "Developed a Hangman Game in React, hosted on GitHub Pages."
+          description2 = "Uses a random word API to fetch random words that will be used for the game, enhancing replayability."
           description3 = "Planning to add more features like difficulty options"
           toolsUsed = "Tools used: ReactJS, CSS, Random Word API"
           githubLink = "https://github.com/alexusljf/Hangman"
@@ -24,8 +24,8 @@ const ProjectsPage = () => {
         <ProjectDivLink
           modName = "API Practice Project"
           projectName = "Should I Run?"
-          description1 = "Developed a web app in React using OpenWeather’s Weather API, hosted on GitHub Pages."
-          description2 = "Users can enter a city’s name and view the current temperature and weather conditions. A recommendation if the user should run will be made based on the current weather."
+          description1 = "Engineered a web app in React using OpenWeather’s Weather API to fetch real-time weather conditions for any city, hosted on GitHub Pages."
+          description2 = "Users can easily input a city's name and receive personalized run recommendations based on real-time weather conditions. "
           description3 = "Learnt how to use APIs and utilise the retrieved data. I run often and I use this app everyday. I find it very useful!"
           toolsUsed = "Tools used: ReactJS, CSS, OpenWeather’s Weather API"
           githubLink = "https://github.com/alexusljf/Should-I-Run"

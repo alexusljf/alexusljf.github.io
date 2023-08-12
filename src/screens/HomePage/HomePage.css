@@ -9,20 +9,23 @@
 .heading{
     display: inline-block;
     border-bottom: solid 1px black;
+    transition: 0.2s;
 }
 .headingNight{
     display: inline-block;
     border-bottom: solid 1px white;
+    transition: 0.2s;
 }
 .myPic{
     width: 300px;
     height: 300px;
-    border-radius: 300px;
+    border-radius: 50%;
     border-color: black;
     border-style: solid;
-    object-fit: contain;
-    object-position: center;
-    background-color: rgb(218, 194, 165);
+    object-fit: cover;
+    object-position: auto;
+    background-color: #fff1de;
+    transition: 0.2s;
 }
 .myPicNight{
     width: 300px;
@@ -33,17 +36,17 @@
     object-fit: contain;
     object-position: center;
     background-color: rgb(36, 36, 36);
+    transition: 0.2s;
 }
 .pictureContainer{
+    margin-left: 20px;
     padding-top : 21.4px;
-    padding-right: 75px;
     display: flex;
     flex-direction: column;
     gap: 25px;
     align-items: center;
 }
 .bioContainer{
-    flex: 3;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
 }
@@ -53,15 +56,17 @@ article{
 .resumeLink, .resumeLink:visited{
     color: black;
     font-weight: bold;
+    transition: 0.2s;
 }
 .resumeLinkNight, .resumeLinkNight:visited{
     color: white;
     font-weight: bold;
+    transition: 0.2s;
 }
 
 @media (max-width: 430px){
     .mainPage{
-        display: block;
+        flex-direction: column-reverse;
         padding-top: 10vh;
         padding-left: 3vw;
         padding-right: 3vw;
@@ -71,11 +76,9 @@ article{
         width: 300px;
         height: 300px;
         border-radius: 300px;
-        border-color: black;
         border-style: solid;
         object-fit: contain;
         object-position: center;
-        background-color: rgb(218, 194, 165);
     }
     .myPicNight{
         position: center;
@@ -92,7 +95,7 @@ article{
         padding-right: 0;
     }
     article{
-        line-height: 1.6; 
+        vertical-align: middle;
     }
     .resumeLink:visited{
         color: black;

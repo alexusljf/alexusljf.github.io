@@ -6,9 +6,9 @@ html{
     cursor: pointer;
     font-size: 20px;
     white-space: nowrap;
-    background-color: black;
-    color: rgb(218, 194, 165);
-    border-color: black;
+    background-color: #293129;
+    color: #fff1de;
+    border-color: #293129;
     border-style: solid;
     padding-left: 10px;
     padding-right: 10px;
@@ -19,9 +19,9 @@ html{
     transition: 0.2s;
 }
 .homeButton:hover, .middleButton:hover{
-    background-color: rgba(80, 64, 43, 0.884);
-    border-color: rgba(80, 64, 43, 0.884);
-    color: white;
+    background-color: #7D8F69;
+    color: #395144;
+    border-color: #7D8F69;
 }
 .homeButtonNight, .middleButtonNight{ 
     cursor: pointer;
@@ -45,7 +45,7 @@ html{
     color: white;
 }
 .topBar{
-    background-color: rgb(218, 194, 165);
+    background-color: #4E6C50;
     position: fixed;
     top:0;
     left:0;
@@ -56,6 +56,7 @@ html{
     padding-left: 30px;
     padding-right: 30px;
     justify-content: space-between;
+    transition: 0.2s;
 }
 .topBarNight{
     background-color: rgb(26, 25, 25);
@@ -69,6 +70,7 @@ html{
     padding-left: 30px;
     padding-right: 30px;
     justify-content: space-between;
+    transition: 0.2s;
 }
 .middleButton, .middleButtonNight{
     margin-left:10px; 
@@ -96,16 +98,18 @@ html{
     font-size:36px;
     margin-left:10px; 
     margin-right: 10px; 
-    color:black;
+    color:#293129;
+    transition: 0.2s;
 }
 .faicon:hover{
-    color: rgba(80, 64, 43, 0.884);
+    color: #7D8F69;
 }
 .faiconNight{
     font-size:36px;
     margin-left:10px; 
     margin-right: 10px; 
     color:white;
+    transition: 0.2s;
 }
 .faiconNight:hover{
     color: rgba(0, 0, 0, 0.884);
