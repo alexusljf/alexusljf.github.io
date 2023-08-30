@@ -22,7 +22,7 @@ const HomePage = () => {
         <p>
         <b>Languages</b>: English, Chinese, Malay <br/>
         <b>Programming Languages</b>: Java, Python, C, SQL, Javascript <br/>
-        <b>Web Development</b>: HTML, CSS, ReactJS <br/>
+        <b>Web Development</b>: HTML, CSS, ReactJS, Sass <br/>
         <b>Other Skills</b>: Microsoft Office Suite, GitHub, Zoom, Microsoft Teams, Jira <br/>
         </p>
         </article>

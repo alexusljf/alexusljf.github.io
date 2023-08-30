@@ -27,7 +27,7 @@ const ProjectsPage = () => {
           description1 = "Engineered a web app in React using OpenWeather’s Weather API to fetch real-time weather conditions for any city, hosted on GitHub Pages."
           description2 = "Users can easily input a city's name and receive personalized run recommendations based on real-time weather conditions. "
           description3 = "Learnt how to use APIs and utilise the retrieved data. I run often and I use this app everyday. I find it very useful!"
-          toolsUsed = "Tools used: ReactJS, CSS, OpenWeather’s Weather API"
+          toolsUsed = "Tools used: ReactJS, Sass, OpenWeather’s Weather API"
           githubLink = "https://github.com/alexusljf/Should-I-Run"
           githubPagesLink = "https://alexusljf.github.io/Should-I-Run/"
         />  
