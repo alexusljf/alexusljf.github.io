@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import "./ExperiencePage.css";
-import sinopecLogo from "./sinopec logo.png";
-import spfLogo from "./Singapore_Police_Force_crest.png";
-import NIELogo from "./NIE_Logo.png";
-import shopeeLogo from "./Shopee_logo.svg.png";
+import sinopecLogo from "./Logos/sinopec logo.png";
+import spfLogo from "./Logos/Singapore_Police_Force_crest.png";
+import NIELogo from "./Logos/NIE_Logo.png";
+import shopeeLogo from "./Logos/Shopee_logo.svg.png";
+import govTechLogo from "./Logos/govtech_logo.png";
 import ExperienceDiv from "./ExperienceDiv";
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
@@ -16,6 +17,15 @@ const ExperiencePage = () => {
       <h1 className={isNightMode === false ? "heading" : "headingNight"}>Experience</h1>
     </header>
     <div className="experienceContainer">
+    <ExperienceDiv
+        img = {govTechLogo}
+        altText = "GovTech Logo"
+        role = "Product Manager Intern : GCSOC Project Coordinator"
+        companyName = "GovTech"
+        date = "Dec 2023 - May 2024"
+        description1 = "I will be doing an internship as a Project Coordinator Intern at GovTech's Government Cyber Security Operations Centre (GCSOC) from 11th Dec 2023 - 31st May 2024!"
+        description2 = ""
+      />      
       <ExperienceDiv
         img = {NIELogo}
         altText = "NIE Logo"

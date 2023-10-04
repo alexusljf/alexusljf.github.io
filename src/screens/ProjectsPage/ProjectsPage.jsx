@@ -64,6 +64,20 @@ const ProjectsPage = () => {
         githubLink = "https://github.com/alexusljf/SC1015-mini_project"
       />      
     </div>
+    <h1 className={isNightMode === false ? "heading" : "headingNight"}> Hackathons </h1> <br></br>
+      <div className="projectContainer">
+        <ProjectDivLink
+          modName = "PSA Code Sprint 2023"
+          projectName = "AI Resource Allocation Manager"
+          description1 = "•	Developed a front-end mock-up for an AI resource manager designed for PSA’s ports."
+          description2 = "Utilised React & CSS for development and hosted on GitHub Pages. React, hosted on GitHub Pages."
+          description3 = "Gained valuable experience in brainstorming and development within a short timeframe. Also introduced me to the world of hackathons, with this as my first participation."
+          toolsUsed = "Tools used: ReactJS, CSS"
+          githubLink = "https://github.com/alexusljf/PSA-Code-Sprint-2023"
+          githubPagesLink = "https://alexusljf.github.io/PSA-Code-Sprint-2023/"
+        />
+        
+     </div>
   </div>
   
 

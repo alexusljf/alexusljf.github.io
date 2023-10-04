@@ -1,21 +1,20 @@
-$backgroundColor : #4E6C50;
-$backgroundColorNight: rgb(36, 36, 36);
-$fontColor : #fff1de;
+@import "../../variables";
 
-.footer{
+%footer{
     margin-top: 12vh;
     margin-bottom: -16px;
-    background-color: $backgroundColor;
-    color: $fontColor;
     text-align: center;
     padding: 2px;
     transition: 0.2s;
 }
+
+.footerDay{
+    @extend %footer;
+    background-color: $footerBackgroundColorDay;
+    color: $footerFontColorDay;
+}
 .footerNight{
-    margin-top: 12vh;
-    margin-bottom: -16px;
-    background-color: $backgroundColorNight;
-    text-align: center;
-    padding: 2px;
-    transition: 0.2s;
+    @extend %footer;
+    background-color: $footerBackgroundColorNight;
+    color: $footerFontColorNight;
 }
