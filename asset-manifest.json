@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.70fe6ad9.css",
-    "main.js": "/static/js/main.ccf5e4b4.js",
+    "main.css": "/static/css/main.404deb80.css",
+    "main.js": "/static/js/main.7f20db42.js",
     "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
     "static/media/photo2.png": "/static/media/photo2.82db61dbe09206f58ae8.png",
     "static/media/Singapore_Police_Force_crest.png": "/static/media/Singapore_Police_Force_crest.e104d0902b8627ffdb0e.png",
@@ -9,12 +9,12 @@
     "static/media/sinopec logo.png": "/static/media/sinopec logo.508802383a3a2f7a68e4.png",
     "static/media/NIE_Logo.png": "/static/media/NIE_Logo.ad227b0adea479b606cc.png",
     "index.html": "/index.html",
-    "main.70fe6ad9.css.map": "/static/css/main.70fe6ad9.css.map",
-    "main.ccf5e4b4.js.map": "/static/js/main.ccf5e4b4.js.map",
+    "main.404deb80.css.map": "/static/css/main.404deb80.css.map",
+    "main.7f20db42.js.map": "/static/js/main.7f20db42.js.map",
     "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.70fe6ad9.css",
-    "static/js/main.ccf5e4b4.js"
+    "static/css/main.404deb80.css",
+    "static/js/main.7f20db42.js"
   ]
 }
