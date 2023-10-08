@@ -136,4 +136,7 @@ article{
         font-size: 16px;
         white-space: nowrap;
     }
+    .projectPage{
+        padding-top: 13vh;
+    }
 }

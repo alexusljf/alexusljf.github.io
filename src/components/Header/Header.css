@@ -121,19 +121,51 @@ html{
 }
 @media (max-width: 430px){
     .homeButton, .middleButton, .homeButtonNight, .middleButtonNight{ 
-        display:none;
         font-size: 12px;
         padding: 5px;
     }
-    .topBar, .topBarNight{
+    .topBar, .topBarNight {
+        height: auto;
+        display: grid;
+        grid-template-rows: auto auto; /* Two rows, one for left/right and one for middle */
+        grid-template-columns: 1fr; /* Single column */
+        align-items: center;  
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        row-gap: 10px;
+      }
+      .leftSection, .leftSectionNight{
+        width:auto
+      }
+    
+      .rightSection, .rightSectionNight {
+        margin-left: -96px;
+      }
+
+
+      .leftSection, .leftSectionNight,
+      .rightSection, .rightSectionNight {
         height: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+        grid-row: 1; /* Place left and right sections in the top row */
+      }
+    
+      .middleSection, .middleSectionNight {
+        grid-row: 2; /* Place middle section in the bottom row */
+      }
+    
+      /* Additional styles for mobile */
+      /* You can adjust padding, margins, etc. as needed */
+      .leftSection,
+      .rightSection,
+      .middleSection, .rightSectionNight, .leftSectionNight, .middleSectionNight {
+      }
+      
     .middleButton, .middleButtonNight{
-        display:none;
         margin-left: 5px; 
         margin-right: 5px;
+        width: 90px
     }
     .faicon, .faiconNight{
         font-size: 24px;

@@ -1,10 +1,22 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import "./HomePage.css";
 import myPic from "./photo2.png";
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
 const HomePage = () => {
     const { isNightMode } = useContext(NightModeContext);
+
+    useEffect(() => {
+      const headingElement = document.querySelector(".heading");
+      const headingNightElement = document.querySelector(".headingNight");
+  
+      if (isNightMode === false) {
+        headingElement.style.animation = "typing 3s steps(30) forwards";
+      } else {
+        headingNightElement.style.animation = "typingNight 3s steps(30) forwards";
+      }
+    }, [isNightMode]); // Add isNightMode as a dependency to re-run when it changes
+
 
   return (
     
@@ -14,7 +26,7 @@ const HomePage = () => {
             Hello! I'm Alexus!
         </h1>
         <article>
-        Passionate and ambitious penultimate Computer Science student seeking an immersive internship to apply theoretical knowledge and practical skills in a real-world setting. <br/>
+        I'm an ambitious penultimate Computer Science student seeking an immersive internship to apply theoretical knowledge and practical skills in a real-world setting. <br/>
         Eager to contribute to a dynamic team and gain hands-on experience to enhance my expertise and skillsets. <br/>
         Strong project management and resourceful problem-solving skills. <br/>
         Proactive self-starter, actively engaged in side-projects to refine skills. <br/>
@@ -26,7 +38,11 @@ const HomePage = () => {
         <b>Other Skills</b>: Microsoft Office Suite, GitHub, Zoom, Microsoft Teams, Jira <br/>
         </p>
         </article>
-        <a href = "https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing" target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>My Resume</a>
+        <a href = "https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing" target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>
+          <button className={isNightMode === false ? "resumeButton" : "resumeButtonNight"}>
+            My Resume
+          </button>
+        </a>
     </div>
     <div className = "pictureContainer">
         <img src = {myPic} className={isNightMode === false ? "myPic" : "myPicNight"}/> 
@@ -34,5 +50,6 @@ const HomePage = () => {
     </div>
   );
 }
+
 
 export default HomePage;

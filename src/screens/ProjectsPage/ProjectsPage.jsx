@@ -69,14 +69,13 @@ const ProjectsPage = () => {
         <ProjectDivLink
           modName = "PSA Code Sprint 2023"
           projectName = "AI Resource Allocation Manager"
-          description1 = "•	Developed a front-end mock-up for an AI resource manager designed for PSA’s ports."
+          description1 = "Developed a front-end mock-up for an AI resource manager designed for PSA’s ports."
           description2 = "Utilised React & CSS for development and hosted on GitHub Pages. React, hosted on GitHub Pages."
           description3 = "Gained valuable experience in brainstorming and development within a short timeframe. Also introduced me to the world of hackathons, with this as my first participation."
           toolsUsed = "Tools used: ReactJS, CSS"
           githubLink = "https://github.com/alexusljf/PSA-Code-Sprint-2023"
           githubPagesLink = "https://alexusljf.github.io/PSA-Code-Sprint-2023/"
         />
-        
      </div>
   </div>
   

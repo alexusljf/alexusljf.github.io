@@ -15,7 +15,7 @@ const Header = () => {
             <div className='leftSection'>
                 <NightModeSwitch className = "switch"/>
             </div>
-        <div className="middleSection">
+            <div className="middleSection">
                 <a href = "#mainSection">
                     <button className = {isNightMode === false ? "middleButton" : "middleButtonNight"}>
                         About Me
@@ -31,7 +31,7 @@ const Header = () => {
                         Experience
                     </button>
                 </a>
-        </div>
+            </div>
             <div className="rightSection">
                 <a href="https://www.linkedin.com/in/alexuslim/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} className = {isNightMode === false ? "faicon" : "faiconNight"}/>

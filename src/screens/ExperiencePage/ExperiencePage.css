@@ -130,3 +130,8 @@
         margin-bottom: -16px;
     }
 }
+@media (max-width: 430px){
+    .experiencePage{
+        padding-top: 13vh;
+    }
+}
