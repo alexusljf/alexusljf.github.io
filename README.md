@@ -1,15 +1,15 @@
 # alexusljf.github.io
 
 Welcome to my Personal Portfolio! <br>
-This website showcases my journey in Computer Science and Software Devlopment.
+This website showcases my journey in Computer Science, Software Devlopment and life!
 
 ## Tools Used
 
 * React
-* CSS
+* SCSS
 * GitHub Pages
 
 ## To-Do
 
-- [] Convert CSS to SCSS
+- [x] Convert CSS to SCSS
 - [] Redesign the Bio section

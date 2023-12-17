@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
-import "./ExperiencePage.css";
+import "./ExperiencePage.scss";
 
 const ExperienceDiv = (props) => {
   const { isNightMode } = useContext(NightModeContext);
 
   return (
-  <div className = {isNightMode === false ? "experienceDiv" : "experienceDivNight"}>
+  <div className = {isNightMode === false ? "experienceDivDay" : "experienceDivNight"}>
   <figure>
     <img src = {props.img} alt = {props.altText} className = "workLogo"/>
   </figure> 
   <article style={{ textAlign: "left" }}>
-    <h1 className={isNightMode === false ? "divHeading" : "divHeadingNight"}>
+    <h1 className={isNightMode === false ? "divHeadingDay" : "divHeadingNight"}>
       {props.role} <br />
       {props.companyName} <br />
       {props.date} <br />

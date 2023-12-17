@@ -1,33 +1,39 @@
-// Footer Colours
+// Footer & Header Colours
+$BarBackgroundColorDay : #4E6C50;
+$BarBackgroundColorNight: rgb(26, 25, 25);
+$BarFontColorDay : #fff1de;
+$BarFontColorNight : #fff1de;
 
-$footerBackgroundColorDay : #4E6C50;
-$footerBackgroundColorNight: rgb(36, 36, 36);
-$footerFontColorDay : #fff1de;
-$footerFontColorNight : #fff1de;
-
-// Header Colors
-$headerBar : #4E6C50;
-$headerBarNight : rgb(26, 25, 25);
-
-$headerButtonBackground : #293129;
-$headerButtonText : #fff1de;
-$headerButtonBorder : #293129;
-
-$headerButtonBackgroundHover : #7D8F69;
-$headerButtonTextHover : #395144;
-$headerButtonBorderHover : #7D8F69;
-
-$headerButtonBackgroundNight : rgb(255, 255, 255);
-$headerButtonTextNight : #000000;
-$headerButtonBorderNight : #000000;
-
-$headerButtonBackgroundNightHover : rgba(0, 0, 0, 0.884);
-$headerButtonTextNightHover : white;
-$headerButtonBorderNightHover : rgba(0, 0, 0, 0.884);
-
+// FaIcon Colours
 $faiconHeader : #293129;
 $faiconHeaderHover : #7D8F69;
 $faiconHeaderNight : white;
 $faiconHeaderNightHover : rgba(0, 0, 0, 0.884);
 
+// Common Page Colours
+$DivHeadingDay : black;
+$DivHeadingNight : white;
+$DivBackgroundDay : #fff1de;
+$DivBackgroundNight : rgb(36, 36, 36);
+
+// Common Button Colours
+$ButtonBackground : #293129;
+$ButtonText : #fff1de;
+$ButtonBorder : #293129;
+$ButtonBackgroundHover : #7D8F69;
+$ButtonTextHover : #395144;
+$ButtonBorderHover : #7D8F69;
+
+$ButtonBackgroundNight : rgb(255, 255, 255);
+$ButtonTextNight : #000000;
+$ButtonBorderNight : #000000;
+$ButtonBackgroundNightHover : rgba(0, 0, 0, 0.884);
+$ButtonTextNightHover : white;
+$ButtonBorderNightHover : rgba(0, 0, 0, 0.884);
+
+// Home Page Colour
+$picBackgroundDay : #fff1de;
+$picBackgroundNight : rgb(36, 36, 36);
+$picBorderDay: #000000;
+$picBorderNight: #ffffff;
 

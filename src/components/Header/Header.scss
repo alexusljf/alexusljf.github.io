@@ -4,13 +4,10 @@
 html{
     scroll-behavior: smooth;
 }
-.homeButton, .middleButton{ 
+%Button{
     cursor: pointer;
     font-size: 20px;
     white-space: nowrap;
-    background-color: $headerButtonBackground;
-    color: $headerButtonText;
-    border-color: $headerButtonBorder;
     border-style: solid;
     padding-left: 10px;
     padding-right: 10px;
@@ -20,34 +17,29 @@ html{
     font-family: 'Montserrat', sans-serif;
     transition: 0.2s;
 }
-.homeButton:hover, .middleButton:hover{
-    background-color: $headerButtonBackgroundHover;
-    color: $headerButtonTextHover;
-    border-color: $headerButtonBorderHover;
+.homeButtonDay, .middleButtonDay{ 
+    @extend %Button;
+    background-color: $ButtonBackground;
+    color: $ButtonText;
+    border-color: $ButtonBorder;
+}
+.homeButtonDay:hover, .middleButtonDay:hover{
+    background-color: $ButtonBackgroundHover;
+    color: $ButtonTextHover;
+    border-color: $ButtonBorderHover;
 }
 .homeButtonNight, .middleButtonNight{ 
-    cursor: pointer;
-    font-size: 20px;
-    white-space: nowrap;
-    background-color: $headerButtonBackgroundNight;
-    color: $headerButtonTextNight;
-    border-color: $headerButtonBorderNight;
-    border-style: solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 12px;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.2s;
+    @extend %Button;
+    background-color: $ButtonBackgroundNight;
+    color: $ButtonTextNight;
+    border-color: $ButtonBorderNight;
 }
 .homeButtonNight:hover, .middleButtonNight:hover{
-    background-color: $headerButtonBackgroundNightHover;
-    border-color: $headerButtonBorderNightHover;
-    color: $headerButtonTextNightHover;
+    background-color: $ButtonBackgroundNightHover;
+    border-color: $ButtonBorderNightHover;
+    color: $ButtonTextNightHover;
 }
-.topBar{
-    background-color: $headerBar;
+%topBar{
     position: fixed;
     top:0;
     left:0;
@@ -59,22 +51,16 @@ html{
     padding-right: 30px;
     justify-content: space-between;
     transition: 0.2s;
+}
+.topBarDay{
+    @extend %topBar;
+    background-color: $BarBackgroundColorDay;
 }
 .topBarNight{
-    background-color: $headerBarNight;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    display:flex;
-    flex-direction: row;
-    height: 65px;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: space-between;
-    transition: 0.2s;
+    @extend %topBar;
+    background-color: $BarBackgroundColorNight;
 }
-.middleButton, .middleButtonNight{
+.middleButtonDay, .middleButtonNight{
     margin-left:10px; 
     margin-right: 10px;
 }
@@ -96,22 +82,22 @@ html{
     align-items:center;
     justify-content: end;
 }
-.faicon{
+%faicon{
     font-size:36px;
     margin-left:10px; 
     margin-right: 10px; 
-    color:$faiconHeader;
     transition: 0.2s;
+}
+.faiconDay{
+    @extend %faicon;
+    color:$faiconHeader;
 }
 .faicon:hover{
     color: $faiconHeaderHover;
 }
 .faiconNight{
-    font-size:36px;
-    margin-left:10px; 
-    margin-right: 10px; 
+    @extend %faicon;
     color: $faiconHeaderNight;
-    transition: 0.2s;
 }
 .faiconNight:hover{
     color: $faiconHeaderNightHover;
@@ -122,11 +108,11 @@ html{
     height: 100px;    
 }
 @media (max-width: 430px){
-    .homeButton, .middleButton, .homeButtonNight, .middleButtonNight{ 
+    %Button{ 
         font-size: 12px;
         padding: 5px;
     }
-    .topBar, .topBarNight {
+    %topBar{
         height: auto;
         display: grid;
         grid-template-rows: auto auto; /* Two rows, one for left/right and one for middle */
@@ -138,84 +124,29 @@ html{
         padding-bottom: 10px;
         row-gap: 10px;
       }
-      .leftSection, .leftSectionNight{
+      .leftSection{
         width:auto
       }
     
-      .rightSection, .rightSectionNight {
+      .rightSection{
         margin-left: -96px;
       }
 
-
-      .leftSection, .leftSectionNight,
-      .rightSection, .rightSectionNight {
+      .leftSection, .rightSection {
         height: 50px;
-        grid-row: 1; /* Place left and right sections in the top row */
+        grid-row: 1;
       }
     
-      .middleSection, .middleSectionNight {
-        grid-row: 2; /* Place middle section in the bottom row */
+      .middleSection {
+        grid-row: 2;
       }
 
-    .middleButton, .middleButtonNight{
+    .middleButtonDay, .middleButtonNight{
         margin-left: 5px; 
         margin-right: 5px;
         width: 90px
     }
-    .faicon, .faiconNight{
-        font-size: 24px;
-        margin-left: 5px; 
-        margin-right: 5px; 
-    }
-    
-    .switch{
-        margin-left: 6px; 
-        width: 100px;
-        height: 100px;    
-    }
-}
-@media (max-width: 430px){
-    .homeButton, .middleButton, .homeButtonNight, .middleButtonNight{ 
-        font-size: 12px;
-        padding: 5px;
-    }
-    .topBar, .topBarNight {
-        height: auto;
-        display: grid;
-        grid-template-rows: auto auto; /* Two rows, one for left/right and one for middle */
-        grid-template-columns: 1fr; /* Single column */
-        align-items: center;  
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        row-gap: 10px;
-      }
-      .leftSection, .leftSectionNight{
-        width:auto
-      }
-    
-      .rightSection, .rightSectionNight {
-        margin-left: -96px;
-      }
-
-
-      .leftSection, .leftSectionNight,
-      .rightSection, .rightSectionNight {
-        height: 50px;
-        grid-row: 1; /* Place left and right sections in the top row */
-      }
-    
-      .middleSection, .middleSectionNight {
-        grid-row: 2; /* Place middle section in the bottom row */
-      }
-
-    .middleButton, .middleButtonNight{
-        margin-left: 5px; 
-        margin-right: 5px;
-        width: 90px
-    }
-    .faicon, .faiconNight{
+    %faicon{
         font-size: 24px;
         margin-left: 5px; 
         margin-right: 5px; 

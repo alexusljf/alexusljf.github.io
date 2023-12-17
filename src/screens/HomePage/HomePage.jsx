@@ -1,28 +1,15 @@
 import React, { useContext, useEffect } from 'react';
-import "./HomePage.css";
-import myPic from "./photo2.png";
+import "./HomePage.scss";
+import myPic from "./me.png";
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
 const HomePage = () => {
-    const { isNightMode } = useContext(NightModeContext);
-
-    useEffect(() => {
-      const headingElement = document.querySelector(".heading");
-      const headingNightElement = document.querySelector(".headingNight");
-  
-      if (isNightMode === false) {
-        headingElement.style.animation = "typing 3s steps(30) forwards";
-      } else {
-        headingNightElement.style.animation = "typingNight 3s steps(30) forwards";
-      }
-    }, [isNightMode]); // Add isNightMode as a dependency to re-run when it changes
-
+  const { isNightMode } = useContext(NightModeContext);
 
   return (
-    
     <div id = "mainSection" className = "mainPage">
     <div className = "bioContainer">
-        <h1 className={isNightMode === false ? "heading" : "headingNight"}>
+        <h1 className={isNightMode === false ? "headingDay" : "headingNight"}>
             Hello! I'm Alexus!
         </h1>
         <article>
@@ -38,14 +25,14 @@ const HomePage = () => {
         <b>Other Skills</b>: Microsoft Office Suite, GitHub, Zoom, Microsoft Teams, Jira <br/>
         </p>
         </article>
-        <a href = "https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing" target = "_blank" className={isNightMode === false ? "resumeLink" : "resumeLinkNight"}>
-          <button className={isNightMode === false ? "resumeButton" : "resumeButtonNight"}>
+        <a href = "https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing" target = "_blank">
+          <button className={isNightMode === false ? "resumeButtonDay" : "resumeButtonNight"}>
             My Resume
           </button>
         </a>
     </div>
     <div className = "pictureContainer">
-        <img src = {myPic} className={isNightMode === false ? "myPic" : "myPicNight"}/> 
+        <img src = {myPic} className={isNightMode === false ? "myPicDay" : "myPicNight"}/> 
     </div>
     </div>
   );

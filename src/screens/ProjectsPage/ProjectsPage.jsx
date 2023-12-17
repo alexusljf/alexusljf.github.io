@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import "./ProjectsPage.css";
+import "./ProjectsPage.scss";
 import {ProjectDiv, ProjectDivLink} from "./ProjectDiv";
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
 
 const ProjectsPage = () => {
-    const { isNightMode } = useContext(NightModeContext);
+  const { isNightMode } = useContext(NightModeContext);
 
   return (
     <div id="projectSection"  className = "projectPage">
     <header>
-      <h1 className={isNightMode === false ? "heading" : "headingNight"}> Personal Projects </h1> <br></br>
+      <h1 className={isNightMode === false ? "headingDay" : "headingNight"}> Personal Projects </h1> <br></br>
       <div className="projectContainer">
         <ProjectDivLink
           modName = "API Practice Project"
@@ -33,7 +33,7 @@ const ProjectsPage = () => {
         />  
      </div>
       
-      <h1 className={isNightMode === false ? "heading" : "headingNight"}> Academic Projects </h1>
+    <h1 className={isNightMode === false ? "headingDay" : "headingNight"}> Academic Projects </h1>
     </header>
     <div className="projectContainer">
     <ProjectDiv
@@ -64,7 +64,8 @@ const ProjectsPage = () => {
         githubLink = "https://github.com/alexusljf/SC1015-mini_project"
       />      
     </div>
-    <h1 className={isNightMode === false ? "heading" : "headingNight"}> Hackathons </h1> <br></br>
+
+    <h1 className={isNightMode === false ? "headingDay" : "headingNight"}> Hackathons </h1> <br></br>
       <div className="projectContainer">
         <ProjectDivLink
           modName = "PSA Code Sprint 2023"
@@ -77,6 +78,7 @@ const ProjectsPage = () => {
           githubPagesLink = "https://alexusljf.github.io/PSA-Code-Sprint-2023/"
         />
      </div>
+  
   </div>
   
 

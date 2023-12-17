@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import "./ExperiencePage.css";
+import "./ExperiencePage.scss";
 import sinopecLogo from "./Logos/sinopec logo.png";
 import spfLogo from "./Logos/Singapore_Police_Force_crest.png";
 import NIELogo from "./Logos/NIE_Logo.png";
@@ -10,11 +10,11 @@ import { NightModeContext } from '../../components/NightModeToggle/NightModeCont
 
 const ExperiencePage = () => {
   const { isNightMode } = useContext(NightModeContext);
+
   return (
-    
   <div id="experienceSection" className="experiencePage">
     <header>
-      <h1 className={isNightMode === false ? "heading" : "headingNight"}>Experience</h1>
+      <h1 className={isNightMode === false ? "headingDay" : "headingNight"}>Experience</h1>
     </header>
     <div className="experienceContainer">
     <ExperienceDiv
@@ -23,15 +23,15 @@ const ExperiencePage = () => {
         role = "Product Manager Intern : GCSOC Project Coordinator"
         companyName = "GovTech"
         date = "Dec 2023 - May 2024"
-        description1 = "I will be doing an internship as a Project Coordinator Intern at GovTech's Government Cyber Security Operations Centre (GCSOC) from 11th Dec 2023 - 31st May 2024!"
-        description2 = ""
+        description1 = "I am interning as a Project Coordinator Intern at GovTech's Government Cyber Security Operations Centre (GCSOC)!"
+        description2 = "Tasked with writing documentation, preparing slides and conducting agency engagement as part of the GCSOC's Requirements Elicitation process."
       />      
       <ExperienceDiv
         img = {NIELogo}
         altText = "NIE Logo"
         role = "Part-time Student Assistant"
         companyName = "National Institute of Education, Singapore"
-        date = "May 2023 - Present"
+        date = "May 2023 - Nov 2023"
         description1 = "Under NTU's Work-Study Scheme. This role at the NIE Library involves Office Administration and Information Management duties."
         description2 = "Assisted in hosting events at the library and also scanning and archiving of old books."
       />

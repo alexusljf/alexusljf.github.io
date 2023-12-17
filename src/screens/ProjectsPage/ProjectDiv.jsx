@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
 import { NightModeContext } from '../../components/NightModeToggle/NightModeContext';
-import "./ProjectsPage.css";
+import "./ProjectsPage.scss";
 
 const ProjectDiv = (props) => {
   const { isNightMode } = useContext(NightModeContext);
 
   return (
-  <div className = {isNightMode === false ? "projectDiv" : "projectDivNight"}>
+  <div className = {isNightMode === false ? "projectDivDay" : "projectDivNight"}>
   <article>
-    <h1 className={isNightMode === false ? "divHeading" : "divHeadingNight"}>
+    <h1 className={isNightMode === false ? "divHeadingDay" : "divHeadingNight"}>
       {props.modName} <br />
       {props.projectName} <br />
     </h1>
@@ -19,7 +19,7 @@ const ProjectDiv = (props) => {
       <li> {props.toolsUsed} </li>
     </ul>
     <div className = 'buttonDiv'>
-      <a href={props.githubLink} target="_blank" className = {isNightMode === false ? "githubButton" : "githubButtonNight"}>
+      <a href={props.githubLink} target="_blank" className = {isNightMode === false ? "githubButtonDay" : "githubButtonNight"}>
         GitHub Repo
       </a>
     </div>
@@ -29,13 +29,14 @@ const ProjectDiv = (props) => {
   );
 }
 
+// This Div is for Projects with Website Links
 const ProjectDivLink = (props) => {
   const { isNightMode } = useContext(NightModeContext);
 
   return (
-  <div className = {isNightMode === false ? "projectDiv" : "projectDivNight"}>
+  <div className = {isNightMode === false ? "projectDivDay" : "projectDivNight"}>
   <article>
-    <h1 className={isNightMode === false ? "divHeading" : "divHeadingNight"}>
+    <h1 className={isNightMode === false ? "divHeadingDay" : "divHeadingNight"}>
       {props.modName} <br />
       {props.projectName} <br />
     </h1>
@@ -46,10 +47,10 @@ const ProjectDivLink = (props) => {
       <li> {props.toolsUsed} </li>
     </ul>
     <div className = 'buttonDivLinks'>
-      <a href={props.githubLink} target="_blank" className = {isNightMode === false ? "githubButton" : "githubButtonNight"}>
+      <a href={props.githubLink} target="_blank" className = {isNightMode === false ? "githubButtonDay" : "githubButtonNight"}>
         GitHub Repo
       </a>
-      <a href={props.githubPagesLink} target="_blank" className = {isNightMode === false ? "githubButton" : "githubButtonNight"}>
+      <a href={props.githubPagesLink} target="_blank" className = {isNightMode === false ? "githubButtonDay" : "githubButtonNight"}>
         Website
       </a>
     </div>
