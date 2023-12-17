@@ -154,14 +154,7 @@ html{
       .middleSection, .middleSectionNight {
         grid-row: 2; /* Place middle section in the bottom row */
       }
-    
-      /* Additional styles for mobile */
-      /* You can adjust padding, margins, etc. as needed */
-      .leftSection,
-      .rightSection,
-      .middleSection, .rightSectionNight, .leftSectionNight, .middleSectionNight {
-      }
-      
+
     .middleButton, .middleButtonNight{
         margin-left: 5px; 
         margin-right: 5px;

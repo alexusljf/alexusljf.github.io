@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import NightModeSwitch from '../NightModeToggle/NightModeSwitch'
-import './Header.css';
+import './Header.scss';
 
 const Header = () => {
     const { isNightMode } = useContext(NightModeContext);
