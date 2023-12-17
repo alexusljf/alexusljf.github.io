@@ -30,12 +30,12 @@
 }
 .myPicDay{
     @extend %myPic;
-    border-color: $picBorderDay;
+    border: solid 1px $picBorderDay;
     background-color: $picBackgroundDay;
 }
 .myPicNight{
     @extend %myPic;
-    border-color: $picBorderNight;
+    border: solid 1px $picBorderNight;
     background-color: $picBackgroundNight;
 }
 .pictureContainer{
