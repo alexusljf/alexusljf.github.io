@@ -1,13 +1,11 @@
 @import '../../variables.scss';
 
 .mainPage{
-    padding-top: 25vh;
-    padding-bottom: 25vh;
+    padding-top: 10vh;
     padding-left: 3vw;
     padding-right: 3vw;
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 %heading{
     display: inline-block;
@@ -26,7 +24,7 @@
     height: 300px;
     border-radius: 50%;
     border-style: solid;
-    object-fit: cover;
+    object-fit: cover;    
     object-position: auto;
     transition: 0.2s;
 }
@@ -48,9 +46,27 @@
     gap: 25px;
     align-items: center;
 }
-.bioContainer{
+%bioContainer{
+    border-width: 1px;
+    border-radius: 6px;
+    border-style: solid;
+    padding: 28px;
+    line-height: 1.6;
+    transition: 0.25s;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
+}
+.bioContainerDay{
+    @extend %bioContainer;
+    box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
+    border: solid 1px $DivHeadingDay;
+    background-color: $DivBackgroundDay;
+}
+.bioContainerNight{
+    @extend %bioContainer;
+    background-color: $DivBackgroundNight;
+    box-shadow: 0;
+    border: solid 1px $DivHeadingNight;
 }
 article{
     line-height: 1.6; 
@@ -107,15 +123,27 @@ article{
         object-fit: contain;
         object-position: center;
     }
-    .pictureContainer{
-        padding-right: 0;
+    %heading{
+        width: 300px;
     }
     article{
         vertical-align: middle;
-    }    
+    } 
+    %bioContainer{
+        border-style: none;
+        padding: 0px;
+    }
+    .bioContainerDay{
+        background-color: $appBackgroundDay;
+        box-shadow: none;
+    }   
+    .bioContainerNight{
+        background-color: $appBackgroundNight;
+    }   
 }
-@media (min-width: 1200px){
+@media (min-height: 1200px){
     .mainPage{
-        padding-bottom: 31vh;
+        padding-top: 17vh;
+        padding-bottom: 10vh;
     }
 }

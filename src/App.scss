@@ -1,14 +1,16 @@
+@import "./variables.scss";
+
 .AppDay {
     text-align: center;
-    background-color: #e7e1d1f5;
+    background-color: $appBackgroundDay;
     font-family: 'Montserrat', sans-serif;
     transition: 0.2s;
 }
   
 .AppNight {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: $appBackgroundNight;
+    color: $appTextNight;
     font-family: 'Montserrat', sans-serif;
     transition: 0.2s;
 }

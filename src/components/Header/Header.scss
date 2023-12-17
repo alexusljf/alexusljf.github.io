@@ -90,17 +90,17 @@ html{
 }
 .faiconDay{
     @extend %faicon;
-    color:$faiconHeader;
+    color: $ButtonBackground;
 }
-.faicon:hover{
-    color: $faiconHeaderHover;
+.faiconDay:hover{
+    color: $ButtonBackgroundHover;
 }
 .faiconNight{
     @extend %faicon;
-    color: $faiconHeaderNight;
+    color: $ButtonBackgroundNight;
 }
 .faiconNight:hover{
-    color: $faiconHeaderNightHover;
+    color: $ButtonBackgroundNightHover;
 }
 .switch{
     margin-left:25px; 
