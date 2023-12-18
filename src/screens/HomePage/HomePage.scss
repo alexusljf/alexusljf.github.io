@@ -141,9 +141,9 @@ article{
         background-color: $appBackgroundNight;
     }   
 }
-@media (min-height: 1200px){
+@media (min-aspect-ratio: 16/10){
     .mainPage{
-        padding-top: 17vh;
-        padding-bottom: 10vh;
+        padding-top: 14vh;
+        padding-bottom: 11vh;
     }
 }
