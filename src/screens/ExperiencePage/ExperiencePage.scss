@@ -1,108 +1,109 @@
 @import "../../variables.scss";
 
 // Experience Page Styles
-%heading{
-    display: inline-block;
-    text-align: "center" ;
-    transition: 0.2s;
+%heading {
+  display: inline-block;
+  text-align: "center";
+  transition: 0.2s;
 }
-.headingDay{
-    @extend %heading;
-    border-bottom: solid 1px $DivHeadingDay;
+.headingDay {
+  @extend %heading;
+  border-bottom: solid 1px $DivHeadingDay;
 }
-.headingNight{
-    @extend %heading;
-    border-bottom: solid 1px $DivHeadingNight;
+.headingNight {
+  @extend %heading;
+  border-bottom: solid 1px $DivHeadingNight;
 }
-.headerText{
-    margin-top: 0;
-    text-align : center;
-    margin-bottom: 20px;
+.headerText {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.experiencePage{
-    padding-top: 10vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
+.experiencePage {
+  padding-top: 8vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
-.experienceContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 40px;
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+  margin-bottom: 4vh;
 }
 
 // Experience Div Styles
-%divHeading{
-    text-align: center ;
-    transition: 0.2s;
+%divHeading {
+  text-align: center;
+  transition: 0.2s;
 }
-.divHeadingDay{
-    @extend %divHeading;
-    border-bottom: solid 1px $DivHeadingDay;
+.divHeadingDay {
+  @extend %divHeading;
+  border-bottom: solid 1px $DivHeadingDay;
 }
-.divHeadingNight{
-    @extend %divHeading;
-    border-bottom: solid 1px $DivHeadingNight;
+.divHeadingNight {
+  @extend %divHeading;
+  border-bottom: solid 1px $DivHeadingNight;
 }
-%experienceDiv{
-    width: 50%;
-    border-radius: 6px;
-    padding-left: 8px;
-    padding-right: 8px;
-    line-height: 1.6;
-    transition: 0.2s;
+%experienceDiv {
+  width: 50%;
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 1.6;
+  transition: 0.2s;
 }
-.experienceDivDay{
-    @extend %experienceDiv;
-    border: solid 1px $DivHeadingDay;
-    background-color: $DivBackgroundDay;
-    box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
+.experienceDivDay {
+  @extend %experienceDiv;
+  border: solid 1px $DivHeadingDay;
+  background-color: $DivBackgroundDay;
+  box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
 }
-.experienceDivNight{
-    @extend %experienceDiv;
-    border: solid 1px $DivHeadingNight;
-    background-color: $DivBackgroundNight;
+.experienceDivNight {
+  @extend %experienceDiv;
+  border: solid 1px $DivHeadingNight;
+  background-color: $DivBackgroundNight;
 }
-.workLogo{
-    width: 30%;
-    border: solid black 1px;
-    border-radius: 10px;
+.workLogo {
+  width: 30%;
+  border: solid black 1px;
+  border-radius: 10px;
+  object-fit: fill;
+  object-position: center;
+  background-color: white;
+  margin-bottom: -16px;
+}
+@media (max-width: 430px) {
+  .experiencePage {
+    padding-top: 13vh;
+  }
+  .workLogo {
+    width: 80%;
+    border-color: black;
+    border-style: solid;
     object-fit: fill;
     object-position: center;
     background-color: white;
     margin-bottom: -16px;
+  }
+  %experienceDiv {
+    width: 90%;
+  }
+  .headerText {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 100%;
+  }
 }
-@media (max-width: 430px){
-    .experiencePage{
-        padding-top: 13vh;
-    }
-    .workLogo{
-        width: 80%;
-        border-color: black;
-        border-style: solid;
-        object-fit: fill;
-        object-position: center;
-        background-color: white;
-        margin-bottom: -16px;
-    }
-    %experienceDiv{
-        width: 90%;
-    }
-    .headerText{
-        text-align : center;
-        margin-bottom: 30px;
-        font-size: 100%;
-    }
-}
-@media (min-width: 1366px){
-    .workLogo{
-        width: 20%;
-        border-color: black;
-        border-style: solid;
-        object-fit: fill;
-        object-position: center;
-        background-color: white;
-        margin-bottom: -16px;
-    }
+@media (min-width: 1366px) {
+  .workLogo {
+    width: 20%;
+    border-color: black;
+    border-style: solid;
+    object-fit: fill;
+    object-position: center;
+    background-color: white;
+    margin-bottom: -16px;
+  }
 }

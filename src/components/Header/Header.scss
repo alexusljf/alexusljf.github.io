@@ -1,160 +1,146 @@
-@import 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap";
 @import "../../variables.scss";
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-%Button{
-    cursor: pointer;
-    font-size: 20px;
-    white-space: nowrap;
-    border-style: solid;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 12px;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.2s;
+%Button {
+  cursor: pointer;
+  font-size: 20px;
+  white-space: nowrap;
+  border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
 }
-.homeButtonDay, .middleButtonDay{ 
-    @extend %Button;
-    background-color: $ButtonBackground;
-    color: $ButtonText;
-    border-color: $ButtonBorder;
+.middleButtonDay {
+  @extend %Button;
+  background-color: $ButtonBackground;
+  color: $ButtonText;
+  border-color: $ButtonBorder;
 }
-.homeButtonDay:hover, .middleButtonDay:hover{
-    background-color: $ButtonBackgroundHover;
-    color: $ButtonTextHover;
-    border-color: $ButtonBorderHover;
+.middleButtonDay:hover {
+  background-color: $ButtonBackgroundHover;
+  color: $ButtonTextHover;
+  border-color: $ButtonBorderHover;
 }
-.homeButtonNight, .middleButtonNight{ 
-    @extend %Button;
-    background-color: $ButtonBackgroundNight;
-    color: $ButtonTextNight;
-    border-color: $ButtonBorderNight;
+.middleButtonNight {
+  @extend %Button;
+  background-color: $ButtonBackgroundNight;
+  color: $ButtonTextNight;
+  border-color: $ButtonBorderNight;
 }
-.homeButtonNight:hover, .middleButtonNight:hover{
-    background-color: $ButtonBackgroundNightHover;
-    border-color: $ButtonBorderNightHover;
-    color: $ButtonTextNightHover;
+.middleButtonNight:hover {
+  background-color: $ButtonBackgroundNightHover;
+  border-color: $ButtonBorderNightHover;
+  color: $ButtonTextNightHover;
 }
-%topBar{
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    display:flex;
-    flex-direction: row;
-    height: 65px;
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: space-between;
-    transition: 0.2s;
+%topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  transition: 0.2s;
 }
-.topBarDay{
-    @extend %topBar;
-    background-color: $BarBackgroundColorDay;
+.topBarDay {
+  @extend %topBar;
+  background-color: $BarBackgroundColorDay;
 }
-.topBarNight{
-    @extend %topBar;
-    background-color: $BarBackgroundColorNight;
+.topBarNight {
+  @extend %topBar;
+  background-color: $BarBackgroundColorNight;
 }
-.middleButtonDay, .middleButtonNight{
-    margin-left:10px; 
-    margin-right: 10px;
+.leftSection {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: start;
 }
-.leftSection{
-    display:flex;
-    flex: 1;
-    align-items:center;
-    justify-content: start;
+.middleSection {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
-.middleSection{
-    display:flex;
-    flex: 1;
-    align-items:center;
-    justify-content: center;
+.rightSection {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: end;
 }
-.rightSection{
-    display:flex;
-    flex: 1;
-    align-items:center;
-    justify-content: end;
+%faicon {
+  font-size: 36px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 0.2s;
 }
-%faicon{
-    font-size:36px;
-    margin-left:10px; 
-    margin-right: 10px; 
-    transition: 0.2s;
+.faiconDay {
+  @extend %faicon;
+  color: $ButtonBackground;
 }
-.faiconDay{
-    @extend %faicon;
-    color: $ButtonBackground;
+.faiconDay:hover {
+  color: $ButtonBackgroundHover;
 }
-.faiconDay:hover{
-    color: $ButtonBackgroundHover;
+.faiconNight {
+  @extend %faicon;
+  color: $ButtonBackgroundNight;
 }
-.faiconNight{
-    @extend %faicon;
-    color: $ButtonBackgroundNight;
+.faiconNight:hover {
+  color: $ButtonBackgroundNightHover;
 }
-.faiconNight:hover{
-    color: $ButtonBackgroundNightHover;
+.switch {
+  margin-left: 25px;
+  width: 100px;
+  height: 100px;
 }
-.switch{
-    margin-left:25px; 
+@media (max-width: 450px) {
+  %topBar {
+    height: auto;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .leftSection {
+    width: auto;
+  }
+
+  .rightSection {
+    margin-left: -96px;
+  }
+
+  .leftSection,
+  .rightSection {
+    height: 50px;
+  }
+
+  %faicon {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .switch {
+    margin-left: 6px;
     width: 100px;
-    height: 100px;    
-}
-@media (max-width: 430px){
-    %Button{ 
-        font-size: 12px;
-        padding: 5px;
-    }
-    %topBar{
-        height: auto;
-        display: grid;
-        grid-template-rows: auto auto; /* Two rows, one for left/right and one for middle */
-        grid-template-columns: 1fr; /* Single column */
-        align-items: center;  
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        row-gap: 10px;
-      }
-      .leftSection{
-        width:auto
-      }
-    
-      .rightSection{
-        margin-left: -96px;
-      }
-
-      .leftSection, .rightSection {
-        height: 50px;
-        grid-row: 1;
-      }
-    
-      .middleSection {
-        grid-row: 2;
-      }
-
-    .middleButtonDay, .middleButtonNight{
-        margin-left: 5px; 
-        margin-right: 5px;
-        width: 90px
-    }
-    %faicon{
-        font-size: 24px;
-        margin-left: 5px; 
-        margin-right: 5px; 
-    }
-    
-    .switch{
-        margin-left: 6px; 
-        width: 100px;
-        height: 100px;    
-    }
+    height: 100px;
+  }
 }
