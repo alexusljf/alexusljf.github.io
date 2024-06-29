@@ -1,141 +1,143 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 // Project Page Styles
 
-.projectPage{
-    padding-top: 10vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
+.projectPage {
+  padding-top: 8vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
-%heading{
-    display: inline-block;
-    text-align: center ;
-    transition: 0.2s;
+%heading {
+  display: inline-block;
+  text-align: center;
+  transition: 0.2s;
 }
-.headingDay{
-    @extend %heading;
-    border-bottom: solid 1px $DivHeadingDay;
+.headingDay {
+  @extend %heading;
+  border-bottom: solid 1px $DivHeadingDay;
 }
-.headingNight{
-    @extend %heading;
-    border-bottom: solid 1px $DivHeadingNight;
+.headingNight {
+  @extend %heading;
+  border-bottom: solid 1px $DivHeadingNight;
 }
-.projectContainer{
-    display:grid; 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-    justify-content: center;
+.projectContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  justify-content: center;
+  margin-bottom: 4vh;
 }
 
 // Project Div Styles
 
-%projectDiv{
-    border-width: 1px;
-    border-radius: 6px;
-    border-style: solid;
-    padding-left: 8px;
-    padding-right: 8px;
-    line-height: 1.6;
-    transition: 0.25s;
+%projectDiv {
+  border-width: 1px;
+  border-radius: 6px;
+  border-style: solid;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 1.6;
+  transition: 0.25s;
 }
-.projectDivDay{
-    @extend %projectDiv;
-    box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
-    border: solid 1px $DivHeadingDay;
-    background-color: $DivBackgroundDay;
+.projectDivDay {
+  @extend %projectDiv;
+  box-shadow: 4px 8px rgba(156, 148, 138, 0.26);
+  border: solid 1px $DivHeadingDay;
+  background-color: $DivBackgroundDay;
 }
-.projectDivNight{
-    @extend %projectDiv;
-    background-color: $DivBackgroundNight;
-    box-shadow: 0;
-    border: solid 1px $DivHeadingNight;
+.projectDivNight {
+  @extend %projectDiv;
+  background-color: $DivBackgroundNight;
+  box-shadow: 0;
+  border: solid 1px $DivHeadingNight;
 }
-%divHeading{
-    text-align: center;
-    transition: 0.25s;
+%divHeading {
+  text-align: center;
+  transition: 0.25s;
 }
-.divHeadingDay{
-    @extend %divHeading;
-    border-bottom: solid 1px $DivHeadingDay;
+.divHeadingDay {
+  @extend %divHeading;
+  border-bottom: solid 1px $DivHeadingDay;
 }
-.divHeadingNight{
-    @extend %divHeading;
-    border-bottom: solid 1px $DivHeadingNight;
+.divHeadingNight {
+  @extend %divHeading;
+  border-bottom: solid 1px $DivHeadingNight;
 }
 
 .projectContainer.two-items .projectDiv {
-    grid-row: span 1;
-}
-  
-/* Center the three projectDiv items when there are three items in the grid */
-.projectContainer.three-items .projectDiv {
-    grid-column: span 1;
-}
-li{
-    margin: 10px 5px;
-}
-article{
-    text-align: left;
-}
-%githubButton{ 
-    cursor: pointer;
-    font-size: 20px;
-    border-style: solid;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 12px;
-    font-family: 'Montserrat', sans-serif;
-    transition: 0.2s;
-    text-decoration: none;
-    white-space: nowrap;
-}
-.githubButtonDay{ 
-    @extend %githubButton;
-    background-color: $ButtonBackground;
-    color: $ButtonText;
-    border-color: $ButtonBorder;
-}
-.githubButtonDay:hover{
-    background-color: $ButtonBackgroundHover;
-    color: $ButtonTextHover;
-    border-color: $ButtonBorderHover;
-}
-.githubButtonNight{ 
-    @extend %githubButton;
-    background-color: $ButtonBackgroundNight;
-    color: $ButtonTextNight;
-    border-color: $ButtonBorderNight;
-}
-.githubButtonNight:hover{
-    background-color: $ButtonBackgroundNightHover;
-    border-color: $ButtonBorderNightHover;
-    color: $ButtonTextNightHover;
-}
-.buttonDiv{
-    display:flex;
-    flex: 1;
-    align-items:center;
-    justify-content: center;
-}
-.buttonDivLinks{
-    display:flex;
-    flex: 1;
-    align-items:center;
-    justify-content: center;
-    gap: 15px;
+  grid-row: span 1;
 }
 
-@media (max-width: 430px){
-    .projectContainer{
-        grid-template-columns: 1fr;
-    }
-    .githubButtonDay, .githubButtonNight{ 
-        font-size: 16px;
-        white-space: nowrap;
-    }
-    .projectPage{
-        padding-top: 13vh;
-    }
+/* Center the three projectDiv items when there are three items in the grid */
+.projectContainer.three-items .projectDiv {
+  grid-column: span 1;
+}
+li {
+  margin: 10px 5px;
+}
+article {
+  text-align: left;
+}
+%githubButton {
+  cursor: pointer;
+  font-size: 20px;
+  border-style: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 12px;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.2s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.githubButtonDay {
+  @extend %githubButton;
+  background-color: $ButtonBackground;
+  color: $ButtonText;
+  border-color: $ButtonBorder;
+}
+.githubButtonDay:hover {
+  background-color: $ButtonBackgroundHover;
+  color: $ButtonTextHover;
+  border-color: $ButtonBorderHover;
+}
+.githubButtonNight {
+  @extend %githubButton;
+  background-color: $ButtonBackgroundNight;
+  color: $ButtonTextNight;
+  border-color: $ButtonBorderNight;
+}
+.githubButtonNight:hover {
+  background-color: $ButtonBackgroundNightHover;
+  border-color: $ButtonBorderNightHover;
+  color: $ButtonTextNightHover;
+}
+.buttonDiv {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.buttonDivLinks {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media (max-width: 430px) {
+  .projectContainer {
+    grid-template-columns: 1fr;
+  }
+  .githubButtonDay,
+  .githubButtonNight {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .projectPage {
+    padding-top: 13vh;
+  }
 }

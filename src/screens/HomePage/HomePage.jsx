@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./HomePage.scss";
 import myPic from "./me.png";
 import { NightModeContext } from "../../components/NightModeToggle/NightModeContext";
@@ -8,18 +8,15 @@ const HomePage = () => {
 
   return (
     <div id="mainSection" className="mainPage">
-      <div
-        className={
-          isNightMode === false ? "bioContainerDay" : "bioContainerNight"
-        }
-      >
+      <div className={isNightMode ? "bioContainerNight" : "bioContainerDay"}>
         <div className="pictureContainer">
           <img
             src={myPic}
-            className={isNightMode === false ? "myPicDay" : "myPicNight"}
+            className={isNightMode ? "myPicNight" : "myPicDay"}
+            alt="pic of myself"
           />
         </div>
-        <h1 className={isNightMode === false ? "headingDay" : "headingNight"}>
+        <h1 className={isNightMode ? "headingNight" : "headingDay"}>
           Hello! I'm Alexus!
         </h1>
         <article>
@@ -45,18 +42,6 @@ const HomePage = () => {
             Management, Product Management Skills <br />
           </p>
         </article>
-        <a
-          href="https://drive.google.com/file/d/11eAecMcNlTtDCSFM_EbI-UdfTyhxEtgQ/view?usp=sharing"
-          target="_blank"
-        >
-          <button
-            className={
-              isNightMode === false ? "resumeButtonDay" : "resumeButtonNight"
-            }
-          >
-            My Resume
-          </button>
-        </a>
       </div>
     </div>
   );
