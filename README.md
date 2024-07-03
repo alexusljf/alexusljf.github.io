@@ -5,11 +5,13 @@ This website showcases my journey in Computer Science, Software Devlopment and l
 
 ## Tools Used
 
-* React
-* SCSS
-* GitHub Pages
+- React
+- SCSS
+- GitHub Pages
 
 ## To-Do
 
 - [x] Convert CSS to SCSS
-- [] Redesign the Bio section
+- [] Redesign the Project & Experience Sections
+  - [] Add Infinite Scroll
+- [] Maybe integrate db functionality to add data without hardcoding it in

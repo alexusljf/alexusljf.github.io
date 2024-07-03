@@ -36,7 +36,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40vw;
+  width: 45vw;
   height: 100%;
 }
 .boxDay {
@@ -76,4 +76,9 @@
 }
 .MuiListItemIcon-root.listItemIconNight {
   color: $BarFontColorNight;
+}
+.MuiListItem-root.listItemDay,
+.MuiListItem-root.listItemNight {
+  padding-left: 20px;
+  padding-right: 20px;
 }
