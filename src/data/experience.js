@@ -10,7 +10,7 @@ export const internships = [
     altText: "GovTech Logo",
     role: "Software Engineer Intern : Full-Stack Web Developer",
     companyName: "GovTech",
-    date: "Feb 2024 - Present",
+    date: "Feb 2024 - Aug 2024",
     description1:
       "I am interning as a Software Engineer Intern under GovTech's Cyber Security Group, doing Full-Stack Web Development for the GCSOC Agency Self-Service Portal (GASSP).",
     description2:

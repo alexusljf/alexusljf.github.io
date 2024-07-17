@@ -30,7 +30,7 @@ const ProjectsPage = () => {
             description3={project.description3}
             toolsUsed={project.toolsUsed}
             githubLink={project.githubLink}
-            githubPagesLink={project.githubPagesLink}
+            website={project.website}
           />
         ))}
       </div>
@@ -50,7 +50,7 @@ const ProjectsPage = () => {
             description3={project.description3}
             toolsUsed={project.toolsUsed}
             githubLink={project.githubLink}
-            githubPagesLink={project.githubPagesLink}
+            website={project.website}
           />
         ))}
       </div>
@@ -71,7 +71,7 @@ const ProjectsPage = () => {
             description3={project.description3}
             toolsUsed={project.toolsUsed}
             githubLink={project.githubLink}
-            githubPagesLink={project.githubPagesLink}
+            website={project.website}
           />
         ))}
       </div>

@@ -1,16 +1,25 @@
 export const personalProjects = [
   {
-    modName: "API Practice Project",
+    projectName: "Link Shortener",
+    description1:
+      "Developed a Link Shortener in Next.js using TypeScript, hosted on Vercel.",
+    description2:
+      "Uses the Bitly API to shorten URLs. The URLs are then stored in a MongoDB collection which is then displayed on the page.",
+    toolsUsed:
+      "Tools used: Next.js in TypeScript, MongoDB, TailwindCSS, Shadcn/UI, Bitly API",
+    githubLink: "https://github.com/alexusljf/link-shortener-next",
+    website: "https://link-shortener-next-five.vercel.app/",
+  },
+  {
     projectName: "Hangman Game",
     description1: "Developed a Hangman Game in React, hosted on GitHub Pages.",
     description2:
       "Uses a random word API to fetch random words that will be used for the game, enhancing replayability.",
     toolsUsed: "Tools used: ReactJS, CSS, Random Word API",
     githubLink: "https://github.com/alexusljf/Hangman",
-    githubPagesLink: "https://alexusljf.github.io/Hangman/",
+    website: "https://alexusljf.github.io/Hangman/",
   },
   {
-    modName: "API Practice Project",
     projectName: "Should I Run?",
     description1:
       "Engineered a web app in React using OpenWeather’s Weather API to fetch real-time weather conditions for any city, hosted on GitHub Pages.",
@@ -20,7 +29,7 @@ export const personalProjects = [
       "Learnt how to use APIs and utilise the retrieved data. I run often and I use this app everyday. I find it very useful!",
     toolsUsed: "Tools used: ReactJS, Sass, OpenWeather’s Weather API",
     githubLink: "https://github.com/alexusljf/Should-I-Run",
-    githubPagesLink: "https://alexusljf.github.io/Should-I-Run/",
+    website: "https://alexusljf.github.io/Should-I-Run/",
   },
 ];
 
@@ -76,6 +85,6 @@ export const hackathonProjects = [
       "Gained valuable experience in brainstorming and development within a short timeframe. Also introduced me to the world of hackathons, with this as my first participation.",
     toolsUsed: "Tools used: ReactJS, CSS",
     githubLink: "https://github.com/alexusljf/PSA-Code-Sprint-2023",
-    githubPagesLink: "https://alexusljf.github.io/PSA-Code-Sprint-2023/",
+    website: "https://alexusljf.github.io/PSA-Code-Sprint-2023/",
   },
 ];

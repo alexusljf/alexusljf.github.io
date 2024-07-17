@@ -9,7 +9,11 @@ const ProjectDiv = (props) => {
     <div className={isNightMode ? "projectDivNight" : "projectDivDay"}>
       <article>
         <h1 className={isNightMode ? "divHeadingNight" : "divHeadingDay"}>
-          {props.modName} <br />
+          {props.modName && (
+            <>
+              {props.modName} <br />
+            </>
+          )}
           {props.projectName} <br />
         </h1>
         <ul className="descriptions">
@@ -27,9 +31,9 @@ const ProjectDiv = (props) => {
           >
             GitHub Repo
           </a>
-          {props.githubPagesLink && (
+          {props.website && (
             <a
-              href={props.githubPagesLink}
+              href={props.website}
               target="_blank"
               rel="noreferrer"
               className={isNightMode ? "githubButtonNight" : "githubButtonDay"}
