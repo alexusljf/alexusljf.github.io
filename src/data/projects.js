@@ -8,7 +8,7 @@ export const personalProjects = [
     toolsUsed:
       "Tools used: Next.js in TypeScript, MongoDB, TailwindCSS, Shadcn/UI, Bitly API",
     githubLink: "https://github.com/alexusljf/link-shortener-next",
-    website: "https://link-shortener-next-five.vercel.app/",
+    website: "https://link-shortener-next-kappa.vercel.app/",
   },
   {
     projectName: "Hangman Game",
