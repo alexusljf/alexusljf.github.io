@@ -2,11 +2,11 @@ export const personalProjects = [
   {
     projectName: "Link Shortener",
     description1:
-      "Developed a Link Shortener in Next.js using TypeScript, hosted on Vercel.",
+      "Developed a Link Shortener in Next.js using TypeScript and TailwindCSS, hosted on Vercel.",
     description2:
-      "Uses the Bitly API to shorten URLs. The URLs are then stored in a MongoDB collection which is then displayed on the page.",
+      "Uses my own API to shorten URLs. The URLs are then stored in a MongoDB collection which is then displayed on the page.",
     toolsUsed:
-      "Tools used: Next.js in TypeScript, MongoDB, TailwindCSS, Shadcn/UI, Bitly API",
+      "Tools used: Next.js in TypeScript, MongoDB, TailwindCSS, Shadcn/UI",
     githubLink: "https://github.com/alexusljf/link-shortener-next",
     website: "https://link-shortener-next-kappa.vercel.app/",
   },
